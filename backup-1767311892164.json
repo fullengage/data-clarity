@@ -1,0 +1,3100 @@
+{
+  "timestamp": "2026-01-01T23:58:11.760Z",
+  "tables": {
+    "datasets": [
+      {
+        "id": "36f1b01c-bb20-4907-b70d-22c5f229dd57",
+        "user_id": "f62660ff-6194-44ef-9121-eafcd4b7bb6b",
+        "name": "RELAÇÃO DE CLIENTES ANDRÉA - PE.csv",
+        "original_columns": [
+          {
+            "name": "RAZÃO SOCIAL",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "Jose Reginaldo Silva Comercio de Alimentos/ Casa do provolone",
+              "LATICINIO ITAJAI LTDA",
+              "MAURICIO BITTENCOURT HENRIQUE SILVA 63964538787",
+              "ELIANE FERREIRA NETO",
+              "INDUSTRIA DE LATICINIOS SUFFI LTDA"
+            ]
+          },
+          {
+            "name": "CNPJ/CPF",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "24.885.872/0001-42",
+              "10.595.283/0001-15",
+              "36.666.054/0001-38",
+              "972.062.611-91",
+              "41.073.265/0001-05"
+            ]
+          },
+          {
+            "name": "PRODUTOS",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "Mussarela 4 kg, Kit Provoleto, Provolone",
+              "Mussarela, Mussarela redonda, Bolinha Condimentada, M. Cabacinha, M. Fracionada, Requeijão 500g",
+              "Liso",
+              "Mandioca",
+              "Queijo Coalho, Mussarela, Mussarela redonda, Queijo Tropical, Requeijão barra, Q. Soro de Leite, Provolone F., R. Barrinha,"
+            ]
+          },
+          {
+            "name": "MATERIAL",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "ENCO/ NYLON",
+              "ENCO",
+              "UMR/ ENCO",
+              "UMR",
+              "ENCO"
+            ]
+          },
+          {
+            "name": "D. ULT. PEDIDO",
+            "type": "date",
+            "nullCount": 2,
+            "sampleValues": [
+              "2/18/2025",
+              "9/29/2025",
+              "10/21/2024",
+              "6/2/2025",
+              "9/18/2025"
+            ]
+          },
+          {
+            "name": "ATIVO/INATIVO",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "ATIVO",
+              "ATIVO",
+              "ATIVO",
+              "ATIVO",
+              "ATIVO"
+            ]
+          },
+          {
+            "name": "OBSERVAÇÃO",
+            "type": "text",
+            "nullCount": 17,
+            "sampleValues": [
+              "Região c/ problema de estiagem",
+              "Compra pouco",
+              "Compra pouco",
+              "Não finalizou ainda",
+              "Não finalizou ainda"
+            ]
+          }
+        ],
+        "sample_data": [
+          {
+            "CNPJ/CPF": "24.885.872/0001-42",
+            "MATERIAL": "ENCO/ NYLON",
+            "PRODUTOS": "Mussarela 4 kg, Kit Provoleto, Provolone",
+            "OBSERVAÇÃO": "Região c/ problema de estiagem",
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "Jose Reginaldo Silva Comercio de Alimentos/ Casa do provolone",
+            "D. ULT. PEDIDO": "2/18/2025"
+          },
+          {
+            "CNPJ/CPF": "10.595.283/0001-15",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Mussarela, Mussarela redonda, Bolinha Condimentada, M. Cabacinha, M. Fracionada, Requeijão 500g",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "LATICINIO ITAJAI LTDA",
+            "D. ULT. PEDIDO": "9/29/2025"
+          },
+          {
+            "CNPJ/CPF": "36.666.054/0001-38",
+            "MATERIAL": "UMR/ ENCO",
+            "PRODUTOS": "Liso",
+            "OBSERVAÇÃO": "Compra pouco",
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "MAURICIO BITTENCOURT HENRIQUE SILVA 63964538787",
+            "D. ULT. PEDIDO": "10/21/2024"
+          },
+          {
+            "CNPJ/CPF": "972.062.611-91",
+            "MATERIAL": "UMR",
+            "PRODUTOS": "Mandioca",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "ELIANE FERREIRA NETO",
+            "D. ULT. PEDIDO": "6/2/2025"
+          },
+          {
+            "CNPJ/CPF": "41.073.265/0001-05",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Queijo Coalho, Mussarela, Mussarela redonda, Queijo Tropical, Requeijão barra, Q. Soro de Leite, Provolone F., R. Barrinha,",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "INDUSTRIA DE LATICINIOS SUFFI LTDA",
+            "D. ULT. PEDIDO": "9/18/2025"
+          },
+          {
+            "CNPJ/CPF": "07.166.286/0001-29",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "ENCO liso, Q. Colonial, Q. Colonial F., Q. Italico, Q. Italico F.",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "LATICINIO NOVA ALEMANHA LTDA",
+            "D. ULT. PEDIDO": "11/3/2025"
+          },
+          {
+            "CNPJ/CPF": "29.286.789/0001-70",
+            "MATERIAL": "ENCO/NYLON",
+            "PRODUTOS": "Mussarela inteira, M. Fatiada, Manteiga",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "AGROINDUSTRIA SANTO ANJO LTDA/LATICINIOS ITALY",
+            "D. ULT. PEDIDO": "11/5/2025"
+          },
+          {
+            "CNPJ/CPF": "685.486.052-00",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Mussarela 4 kg",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "PAULO BARROS DA CRUZ/ Unidade de beneficiamento de leite e derivados",
+            "D. ULT. PEDIDO": "9/11/2025"
+          },
+          {
+            "CNPJ/CPF": "29.104.720/0001-89",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "Mussarela, Provolone, Colonial, Minas Frescal",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "LATICINIOS FERREIRA LTDA",
+            "D. ULT. PEDIDO": "9/24/2025"
+          },
+          {
+            "CNPJ/CPF": "02.663.781/0001-20",
+            "MATERIAL": "ENCO/POLIETILENO",
+            "PRODUTOS": "Mussarela 3 kg, Ricota, Manteiga, Minas padrão pedaço",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "PEAGE LACTICINIOS LTDA/ LACTICINIOS SÃO MIGUEL",
+            "D. ULT. PEDIDO": "8/22/2025"
+          },
+          {
+            "CNPJ/CPF": "80.680.242/0001-02",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Q. Colonial",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "LATICINIOS DOERNER LTDA",
+            "D. ULT. PEDIDO": "5/22/2025"
+          },
+          {
+            "CNPJ/CPF": "57 952 814/0001-43",
+            "MATERIAL": "UMR",
+            "PRODUTOS": "Espeto bovino fraldinha, Esp. File de peito, Espeto temperado",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "ESPETINHO CHURRA-BOM (Agilzo Santos-parceria)",
+            "D. ULT. PEDIDO": "8/25/2025"
+          },
+          {
+            "CNPJ/CPF": "029. 049.702-74",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "Liso",
+            "OBSERVAÇÃO": "Compra pouco",
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "EGISELI DOS SANTOS PEDROSA",
+            "D. ULT. PEDIDO": "5/22/2025"
+          },
+          {
+            "CNPJ/CPF": "54.431.109/0001-02",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "Minas Frescal",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "OURO VALE LTDA/ LATICINIO OURO BRANCO",
+            "D. ULT. PEDIDO": "7/18/2025"
+          },
+          {
+            "CNPJ/CPF": "17.578.791/0001-34",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Mussarela Temperada, Provolone",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "ERCILIO MASSON NETO/ LATICINIO SANTA CECILIA",
+            "D. ULT. PEDIDO": "7/22/2025"
+          },
+          {
+            "CNPJ/CPF": "18.175.469/0001-27",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Ricota Fresca",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "C C M INDUSTRIA DE LATICINIOS LTDA/LATICINIOS SENA",
+            "D. ULT. PEDIDO": "6/24/2025"
+          },
+          {
+            "CNPJ/CPF": "00.208.286.0001-03",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "Mussarela 4 kg, Mussarela 500g",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "COOPERATIVA AGROPECUARIA MISTA OURO VERDE/COMOV",
+            "D. ULT. PEDIDO": "10/14/2025"
+          },
+          {
+            "CNPJ/CPF": "17.345.453/0001-52",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "Variadas 500g,   Variados 7 kg",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "CORREA E MELGACO LTDA/ SAZA ALIMENTOS",
+            "D. ULT. PEDIDO": "8/5/2025"
+          },
+          {
+            "CNPJ/CPF": "51.360.096/0001-30",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "Ximango",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "FERNANDA ALVES DOS SANTOS DANTAS",
+            "D. ULT. PEDIDO": "9/15/2025"
+          },
+          {
+            "CNPJ/CPF": "21.684.764/0001-13",
+            "MATERIAL": "ENCO",
+            "PRODUTOS": "LISA estoque",
+            "OBSERVAÇÃO": null,
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "VERA LUCIA P. FERNANDES",
+            "D. ULT. PEDIDO": "8/18/2025"
+          },
+          {
+            "CNPJ/CPF": "CPF: 52967204072",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "Queijo Coalho",
+            "OBSERVAÇÃO": "Não finalizou ainda",
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "Sergio Lorenzon",
+            "D. ULT. PEDIDO": null
+          },
+          {
+            "CNPJ/CPF": "61.729.041/0001-08",
+            "MATERIAL": "NYLON",
+            "PRODUTOS": "MINAS FRESCAL LIGHT",
+            "OBSERVAÇÃO": "Não finalizou ainda",
+            "ATIVO/INATIVO": "ATIVO",
+            "RAZÃO SOCIAL": "EMPORIO MASSA FINA LTDA",
+            "D. ULT. PEDIDO": null
+          }
+        ],
+        "row_count": 22,
+        "created_at": "2026-01-01T21:12:50.1275+00:00"
+      },
+      {
+        "id": "ca33f39a-7232-4441-9d76-0c46d1948787",
+        "user_id": "f62660ff-6194-44ef-9121-eafcd4b7bb6b",
+        "name": "Controle de Qualidade - Produção e Apara - DEZEMBRO 2025 - Extrusora.csv",
+        "original_columns": [
+          {
+            "name": "Mês",
+            "type": "date",
+            "nullCount": 0,
+            "sampleValues": [
+              "2/12/25",
+              "2/12/25",
+              "2/12/25",
+              "2/12/25",
+              "2/12/25"
+            ]
+          },
+          {
+            "name": "OP",
+            "type": "number",
+            "nullCount": 0,
+            "sampleValues": [
+              "14565",
+              "14718",
+              "14677",
+              "14492",
+              "14654"
+            ]
+          },
+          {
+            "name": "Unnamed: 2",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "ALIMENTOS FRIMAIS",
+              "COMERCIAL ANTINHAS",
+              "ANA RAMOS DA SILVA SALVADOR",
+              "VITTA IND E COM DE LATIC",
+              "DI MANGIARE"
+            ]
+          },
+          {
+            "name": "Unnamed: 3",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "PRESUNTO FRIMAIS",
+              "LISO",
+              "ESPETINHOS ROBETINHO",
+              "Q. MUSSARELA LELE",
+              "PAO  HAMBURGUER DI MANGIARE"
+            ]
+          },
+          {
+            "name": "Material",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "TRIPA",
+              "UMR",
+              "ENCO",
+              "ENCO",
+              "UMR"
+            ]
+          },
+          {
+            "name": "_Impresso / Liso",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "IMP",
+              "LISO",
+              "IMP",
+              "IMP",
+              "IMP"
+            ]
+          },
+          {
+            "name": "Medida",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "22X46X0,11",
+              "16X30X0,08",
+              "18X28X0,09",
+              "24X47X0,10",
+              "17X39X0,09"
+            ]
+          },
+          {
+            "name": "g/mts Programado",
+            "type": "number",
+            "nullCount": 0,
+            "sampleValues": [
+              "26,62",
+              "12,8",
+              "28",
+              "24",
+              "15,3"
+            ]
+          },
+          {
+            "name": "Operador",
+            "type": "text",
+            "nullCount": 0,
+            "sampleValues": [
+              "THIAGO",
+              "WELINGTON",
+              "WELINGTON",
+              "THIAGO",
+              "LUCAS"
+            ]
+          },
+          {
+            "name": "Apara do Setor",
+            "type": "number",
+            "nullCount": 0,
+            "sampleValues": [
+              "26,62",
+              "12,8",
+              "28",
+              "24",
+              "15,3"
+            ]
+          },
+          {
+            "name": "Kg Total Produzido",
+            "type": "number",
+            "nullCount": 0,
+            "sampleValues": [
+              "145,2",
+              "104,3",
+              "103,9",
+              "598,3",
+              "137,6"
+            ]
+          },
+          {
+            "name": "Metros Total Produzido",
+            "type": "number",
+            "nullCount": 0,
+            "sampleValues": [
+              "5453",
+              "23570",
+              "6413",
+              "24900",
+              "8992"
+            ]
+          },
+          {
+            "name": "% de Apara",
+            "type": "percentage",
+            "nullCount": 0,
+            "sampleValues": [
+              "18,33%",
+              "12,27%",
+              "26,95%",
+              "4,01%",
+              "11,12%"
+            ]
+          },
+          {
+            "name": "Qualidade",
+            "type": "percentage",
+            "nullCount": 0,
+            "sampleValues": [
+              "81,67%",
+              "87,73%",
+              "73,05%",
+              "95,99%",
+              "88,88%"
+            ]
+          }
+        ],
+        "sample_data": [
+          {
+            "OP": 14565,
+            "Mês": "2/12/25",
+            "Medida": "22X46X0,11",
+            "Material": "TRIPA",
+            "Operador": "THIAGO",
+            "Qualidade": "81,67%",
+            "% de Apara": "18,33%",
+            "Unnamed: 2": "ALIMENTOS FRIMAIS",
+            "Unnamed: 3": "PRESUNTO FRIMAIS",
+            "Apara do Setor": "26,62",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "26,62",
+            "Kg Total Produzido": "145,2",
+            "Metros Total Produzido": 5453
+          },
+          {
+            "OP": 14718,
+            "Mês": "2/12/25",
+            "Medida": "16X30X0,08",
+            "Material": "UMR",
+            "Operador": "WELINGTON",
+            "Qualidade": "87,73%",
+            "% de Apara": "12,27%",
+            "Unnamed: 2": "COMERCIAL ANTINHAS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "12,8",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "12,8",
+            "Kg Total Produzido": "104,3",
+            "Metros Total Produzido": 23570
+          },
+          {
+            "OP": 14677,
+            "Mês": "2/12/25",
+            "Medida": "18X28X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "73,05%",
+            "% de Apara": "26,95%",
+            "Unnamed: 2": "ANA RAMOS DA SILVA SALVADOR",
+            "Unnamed: 3": "ESPETINHOS ROBETINHO",
+            "Apara do Setor": "28",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "28",
+            "Kg Total Produzido": "103,9",
+            "Metros Total Produzido": 6413
+          },
+          {
+            "OP": 14492,
+            "Mês": "2/12/25",
+            "Medida": "24X47X0,10",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "95,99%",
+            "% de Apara": "4,01%",
+            "Unnamed: 2": "VITTA IND E COM DE LATIC",
+            "Unnamed: 3": "Q. MUSSARELA LELE",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "598,3",
+            "Metros Total Produzido": 24900
+          },
+          {
+            "OP": 14654,
+            "Mês": "2/12/25",
+            "Medida": "17X39X0,09",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "88,88%",
+            "% de Apara": "11,12%",
+            "Unnamed: 2": "DI MANGIARE",
+            "Unnamed: 3": "PAO  HAMBURGUER DI MANGIARE",
+            "Apara do Setor": "15,3",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "15,3",
+            "Kg Total Produzido": "137,6",
+            "Metros Total Produzido": 8992
+          },
+          {
+            "OP": 14648,
+            "Mês": "2/12/25",
+            "Medida": "24X51X0,10",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "83,72%",
+            "% de Apara": "16,28%",
+            "Unnamed: 2": "F FURTADO DE OLIVEIRA",
+            "Unnamed: 3": "Q MUSS LACTOFORTE",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "147,4",
+            "Metros Total Produzido": 6139
+          },
+          {
+            "OP": 14678,
+            "Mês": "3/12/25",
+            "Medida": "18X40X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "89,04%",
+            "% de Apara": "10,96%",
+            "Unnamed: 2": "ANA RAMOS DA SILVA SALVADOR",
+            "Unnamed: 3": "ESPETINHOS ROBERTINHO CARNES",
+            "Apara do Setor": "16,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "16,2",
+            "Kg Total Produzido": "147,8",
+            "Metros Total Produzido": 9102
+          },
+          {
+            "OP": 14649,
+            "Mês": "3/12/25",
+            "Medida": "15X36X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "88,05%",
+            "% de Apara": "11,95%",
+            "Unnamed: 2": "VIDEIRA PACK",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "13,5",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "13,5",
+            "Kg Total Produzido": "113",
+            "Metros Total Produzido": 8368
+          },
+          {
+            "OP": 14693,
+            "Mês": "3/12/25",
+            "Medida": "25X50X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "93,86%",
+            "% de Apara": "6,14%",
+            "Unnamed: 2": "CEPLAST",
+            "Unnamed: 3": "Q. MUSS. SÃO FRANCISCO",
+            "Apara do Setor": "22,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22,5",
+            "Kg Total Produzido": "366,7",
+            "Metros Total Produzido": 16280
+          },
+          {
+            "OP": 14685,
+            "Mês": "3/12/25",
+            "Medida": "16X28X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "90,09%",
+            "% de Apara": "9,91%",
+            "Unnamed: 2": "JOSE TARCISO",
+            "Unnamed: 3": "MINAS FRAC OURO MINEIRO",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "145,3",
+            "Metros Total Produzido": 10088
+          },
+          {
+            "OP": 14676,
+            "Mês": "4/12/25",
+            "Medida": "24X46X0,10",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "96,99%",
+            "% de Apara": "3,01%",
+            "Unnamed: 2": "COOP VALE DO PARACATU",
+            "Unnamed: 3": "Q. MUSS. PARACATU",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "717,2",
+            "Metros Total Produzido": 33809
+          },
+          {
+            "OP": 14679,
+            "Mês": "4/12/25",
+            "Medida": "38X46X0,12",
+            "Material": "UMR",
+            "Operador": "CAIK",
+            "Qualidade": "69,80%",
+            "% de Apara": "30,20%",
+            "Unnamed: 2": "ANA RAMOS DA SILVA SALVADOR",
+            "Unnamed: 3": "CARNEIRO ROBERTINHO",
+            "Apara do Setor": "45,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "45,6",
+            "Kg Total Produzido": "151",
+            "Metros Total Produzido": 3309
+          },
+          {
+            "OP": 14687,
+            "Mês": "4/12/25",
+            "Medida": "22X19X0,10",
+            "Material": "UMR",
+            "Operador": "THIAGO",
+            "Qualidade": "87,88%",
+            "% de Apara": "12,12%",
+            "Unnamed: 2": "CEPLAST",
+            "Unnamed: 3": "BACON FATIADO SUINO PARACATU",
+            "Apara do Setor": "22",
+            "_Impresso / Liso": "UMR",
+            "g/mts Programado": "22",
+            "Kg Total Produzido": "181,5",
+            "Metros Total Produzido": 8247
+          },
+          {
+            "OP": 14672,
+            "Mês": "4/12/25",
+            "Medida": "36X43X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "55,43%",
+            "% de Apara": "44,57%",
+            "Unnamed: 2": "VIDEIRA PACK",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "32,4",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "32,4",
+            "Kg Total Produzido": "72,7",
+            "Metros Total Produzido": 4292
+          },
+          {
+            "OP": 14690,
+            "Mês": "4/12/25",
+            "Medida": "25X42X0,10",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "73,00%",
+            "% de Apara": "27,00%",
+            "Unnamed: 2": "IRANI CASTILHO VIAES",
+            "Unnamed: 3": "LING. CALABRESA MACAUBAL",
+            "Apara do Setor": "25",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "25",
+            "Kg Total Produzido": "92,6",
+            "Metros Total Produzido": 3704
+          },
+          {
+            "OP": 14680,
+            "Mês": "4/12/25",
+            "Medida": "15X26X0,12",
+            "Material": "NP",
+            "Operador": "LUCAS",
+            "Qualidade": "88,77%",
+            "% de Apara": "11,23%",
+            "Unnamed: 2": "IND DE LATICINIOS ARTEMINAS",
+            "Unnamed: 3": "PROV NOZINHO DEF NUNES PENA",
+            "Apara do Setor": "16,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "16,5",
+            "Kg Total Produzido": "146,9",
+            "Metros Total Produzido": 8900
+          },
+          {
+            "OP": 14666,
+            "Mês": "4/12/25",
+            "Medida": "15,5X21,5X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "77,02%",
+            "% de Apara": "22,98%",
+            "Unnamed: 2": "IND DE LATICINIOS SUFFI",
+            "Unnamed: 3": "MUSS. REDONDA ALTAMIRA",
+            "Apara do Setor": "13,95",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "13,95",
+            "Kg Total Produzido": "60,7",
+            "Metros Total Produzido": 4350
+          },
+          {
+            "OP": 14728,
+            "Mês": "4/12/25",
+            "Medida": "30X45X0,12",
+            "Material": "UMR",
+            "Operador": "THIAGO",
+            "Qualidade": "90,38%",
+            "% de Apara": "9,62%",
+            "Unnamed: 2": "RB CARNES COM DE ALIMENTOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "36",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "36",
+            "Kg Total Produzido": "374,4",
+            "Metros Total Produzido": 10397
+          },
+          {
+            "OP": 14778,
+            "Mês": "5/12/25",
+            "Medida": "19,5X85,5X0,18",
+            "Material": "NP",
+            "Operador": "LUCAS",
+            "Qualidade": "47,69%",
+            "% de Apara": "52,31%",
+            "Unnamed: 2": "LATIC. QUEIJIOS DA SERRA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "35,1",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "35,1",
+            "Kg Total Produzido": "67,1",
+            "Metros Total Produzido": 1911
+          },
+          {
+            "OP": 14698,
+            "Mês": "5/12/25",
+            "Medida": "36X42X0,10",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "80,07%",
+            "% de Apara": "19,93%",
+            "Unnamed: 2": "LATIC. MONTES BELOS",
+            "Unnamed: 3": "TROPICAL LIZ",
+            "Apara do Setor": "36",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "36",
+            "Kg Total Produzido": "180,6",
+            "Metros Total Produzido": 1855
+          },
+          {
+            "OP": 14691,
+            "Mês": "5/12/25",
+            "Medida": "16X28X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "83,24%",
+            "% de Apara": "16,76%",
+            "Unnamed: 2": "IRANI CASTILHO VIAES",
+            "Unnamed: 3": "CALABRESA MACAUBAL",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "85,9",
+            "Metros Total Produzido": 5965
+          },
+          {
+            "OP": 14697,
+            "Mês": "5/12/25",
+            "Medida": "18X28X0,10",
+            "Material": "UMR",
+            "Operador": "THIAGO",
+            "Qualidade": "76,62%",
+            "% de Apara": "23,38%",
+            "Unnamed: 2": "CERRADO SELECT",
+            "Unnamed: 3": "PANCETA",
+            "Apara do Setor": "18",
+            "_Impresso / Liso": "NP",
+            "g/mts Programado": "18",
+            "Kg Total Produzido": "77",
+            "Metros Total Produzido": 4752
+          },
+          {
+            "OP": 14692,
+            "Mês": "5/12/25",
+            "Medida": "24X48X0,13",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "85,33%",
+            "% de Apara": "14,67%",
+            "Unnamed: 2": "IND E COM LATC MINAS BAHIA",
+            "Unnamed: 3": "MUSS BARRA MINAS BAHIA",
+            "Apara do Setor": "31,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "31,2",
+            "Kg Total Produzido": "212,7",
+            "Metros Total Produzido": 6816
+          },
+          {
+            "OP": 14669,
+            "Mês": "5/12/25",
+            "Medida": "23X40X0,10",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "84,08%",
+            "% de Apara": "15,92%",
+            "Unnamed: 2": "PROD. ALIMENTICIOS DONA GE",
+            "Unnamed: 3": "FRANGO CAIPIRA INTEIRO",
+            "Apara do Setor": "23",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "23",
+            "Kg Total Produzido": "144,5",
+            "Metros Total Produzido": 6281
+          },
+          {
+            "OP": 14664,
+            "Mês": "5/12/25",
+            "Medida": "10X15X0,10",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "75,53%",
+            "% de Apara": "24,47%",
+            "Unnamed: 2": "FERNANDO CESAR DOS REIS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "15",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "15",
+            "Kg Total Produzido": "61,3",
+            "Metros Total Produzido": 4085
+          },
+          {
+            "OP": 14689,
+            "Mês": "6/12/25",
+            "Medida": "16X28X0,10",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "86,64%",
+            "% de Apara": "13,36%",
+            "Unnamed: 2": "LEANDRO JOSE LIMA",
+            "Unnamed: 3": "MINAS ARTESANAL CANASTRA",
+            "Apara do Setor": "16",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "16",
+            "Kg Total Produzido": "119,8",
+            "Metros Total Produzido": 7487
+          },
+          {
+            "OP": 14704,
+            "Mês": "6/12/25",
+            "Medida": "17X25X0,16",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "82,61%",
+            "% de Apara": "17,39%",
+            "Unnamed: 2": "AGROINDUSTRIA S SEBASTIÃO",
+            "Unnamed: 3": "Q MUSS BOLINHA 300G SWIFT",
+            "Apara do Setor": "27,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "27,2",
+            "Kg Total Produzido": "156,4",
+            "Metros Total Produzido": 5748
+          },
+          {
+            "OP": 14682,
+            "Mês": "6/12/25",
+            "Medida": "24X46X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "84,12%",
+            "% de Apara": "15,88%",
+            "Unnamed: 2": "VIDEIRA PACK ALIMENTOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "136",
+            "Metros Total Produzido": 6294
+          },
+          {
+            "OP": 14722,
+            "Mês": "6/12/25",
+            "Medida": "19X18,5X0,14",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "47,03%",
+            "% de Apara": "52,97%",
+            "Unnamed: 2": "WORLD VEGAN",
+            "Unnamed: 3": "SALSICHA DE GRÃO BICO VEGANA",
+            "Apara do Setor": "25,9",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "25,9",
+            "Kg Total Produzido": "48,9",
+            "Metros Total Produzido": 10120
+          },
+          {
+            "OP": 14703,
+            "Mês": "6/12/25",
+            "Medida": "17X23X0,16",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "84,93%",
+            "% de Apara": "15,07%",
+            "Unnamed: 2": "AGROINDUSTRIA S SEBASTIÃO",
+            "Unnamed: 3": "Q. MUSS. FATIADO 300 SWIFT",
+            "Apara do Setor": "27,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "27,2",
+            "Kg Total Produzido": "180,5",
+            "Metros Total Produzido": 6634
+          },
+          {
+            "OP": 14710,
+            "Mês": "6/12/25",
+            "Medida": "20X53X0,10",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "83,22%",
+            "% de Apara": "16,78%",
+            "Unnamed: 2": "COMERCIAL ATACAREJO PARAISO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "20",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "20",
+            "Kg Total Produzido": "119,2",
+            "Metros Total Produzido": 11330
+          },
+          {
+            "OP": 14712,
+            "Mês": "6/12/25",
+            "Medida": "22X33X0,10",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "71,97%",
+            "% de Apara": "28,03%",
+            "Unnamed: 2": "COMERCIAL ATACAREJO PARAISO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "22",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "22",
+            "Kg Total Produzido": "78,5",
+            "Metros Total Produzido": 10860
+          },
+          {
+            "OP": 14723,
+            "Mês": "6/12/25",
+            "Medida": "13X22,5X0,14",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "74,40%",
+            "% de Apara": "25,60%",
+            "Unnamed: 2": "AVICOLA GOTTY",
+            "Unnamed: 3": "OVOS DE CODORNA 250G",
+            "Apara do Setor": "18,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "18,2",
+            "Kg Total Produzido": "71,1",
+            "Metros Total Produzido": 3906
+          },
+          {
+            "OP": 14694,
+            "Mês": "6/12/25",
+            "Medida": "20X30X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "92,81%",
+            "% de Apara": "7,19%",
+            "Unnamed: 2": "VIDEIRA ALIMENTOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "18",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "18",
+            "Kg Total Produzido": "250,5",
+            "Metros Total Produzido": 13913
+          },
+          {
+            "OP": 14667,
+            "Mês": "6/12/25",
+            "Medida": "22X28X0,10",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "79,25%",
+            "% de Apara": "20,75%",
+            "Unnamed: 2": "EDER CASSIO RIBEIRO",
+            "Unnamed: 3": "QUEIJO MINAS NATA DE ARAXA",
+            "Apara do Setor": "22",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22",
+            "Kg Total Produzido": "106",
+            "Metros Total Produzido": 4818
+          },
+          {
+            "OP": 14696,
+            "Mês": "8/12/25",
+            "Medida": "15X25X0,12",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "74,65%",
+            "% de Apara": "25,35%",
+            "Unnamed: 2": "IND. LATIC. SANTA RITA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "18",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "18",
+            "Kg Total Produzido": "71",
+            "Metros Total Produzido": 3944
+          },
+          {
+            "OP": 14785,
+            "Mês": "8/12/25",
+            "Medida": "22X26X0,10",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "65,08%",
+            "% de Apara": "34,92%",
+            "Unnamed: 2": "DALAC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "22",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "22",
+            "Kg Total Produzido": "63",
+            "Metros Total Produzido": 2862
+          },
+          {
+            "OP": 14714,
+            "Mês": "8/12/25",
+            "Medida": "26X39X0,10",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "88,18%",
+            "% de Apara": "11,82%",
+            "Unnamed: 2": "COMERCIAL ATACAREJO PARAISO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "26",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "26",
+            "Kg Total Produzido": "219,9",
+            "Metros Total Produzido": 8455
+          },
+          {
+            "OP": 14688,
+            "Mês": "8/12/25",
+            "Medida": "16,5X21,5X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "79,23%",
+            "% de Apara": "20,77%",
+            "Unnamed: 2": "CHAPADA DIAMANTINA",
+            "Unnamed: 3": "Q BRANCO BENTO BARBOSA",
+            "Apara do Setor": "14,85",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,85",
+            "Kg Total Produzido": "71,5",
+            "Metros Total Produzido": 4813
+          },
+          {
+            "OP": 14716,
+            "Mês": "9/12/25",
+            "Medida": "24X77X0,10",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "87,88%",
+            "% de Apara": "12,12%",
+            "Unnamed: 2": "COMERCIAL ATACAREJO PARAISO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "198,1",
+            "Metros Total Produzido": 8252
+          },
+          {
+            "OP": 14750,
+            "Mês": "9/12/25",
+            "Medida": "18X24X0,09",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "80,92%",
+            "% de Apara": "19,08%",
+            "Unnamed: 2": "VITTA IND E COM DE LATIC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "16,2",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "16,2",
+            "Kg Total Produzido": "84,9",
+            "Metros Total Produzido": 5240
+          },
+          {
+            "OP": 14695,
+            "Mês": "9/12/25",
+            "Medida": "17X22,5X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "81,16%",
+            "% de Apara": "18,84%",
+            "Unnamed: 2": "IND LATIC SANTA RITA",
+            "Unnamed: 3": "RICOTA SANTA RITA",
+            "Apara do Setor": "15,3",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "15,3",
+            "Kg Total Produzido": "81,2",
+            "Metros Total Produzido": 5307
+          },
+          {
+            "OP": 14741,
+            "Mês": "9/12/25",
+            "Medida": "21X25X0,09",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "88,74%",
+            "% de Apara": "11,26%",
+            "Unnamed: 2": "LATIC. EXTERKOETER",
+            "Unnamed: 3": "Q. MUSS. FAT. PESO VARIAVEL",
+            "Apara do Setor": "18,9",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "18,9",
+            "Kg Total Produzido": "167,8",
+            "Metros Total Produzido": 8876
+          },
+          {
+            "OP": 14740,
+            "Mês": "9/12/25",
+            "Medida": "22X25X0,10",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "85,64%",
+            "% de Apara": "14,36%",
+            "Unnamed: 2": "LATIC. EXTERKOETER",
+            "Unnamed: 3": "MUSS. FRAC. 1 KG LATELLI",
+            "Apara do Setor": "22",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22",
+            "Kg Total Produzido": "153,2",
+            "Metros Total Produzido": 6961
+          },
+          {
+            "OP": 14706,
+            "Mês": "9/12/25",
+            "Medida": "24X50X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "87,96%",
+            "% de Apara": "12,04%",
+            "Unnamed: 2": "COOPERATIVA MISTA OURO VERDE",
+            "Unnamed: 3": "MUS. COMOV",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "179,4",
+            "Metros Total Produzido": 8303
+          },
+          {
+            "OP": 14724,
+            "Mês": "10/12/25",
+            "Medida": "20X35X0,14",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "80,51%",
+            "% de Apara": "19,49%",
+            "Unnamed: 2": "GM FLEX",
+            "Unnamed: 3": "VARIEDADES FILET MAIOR",
+            "Apara do Setor": "28",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "28",
+            "Kg Total Produzido": "143,7",
+            "Metros Total Produzido": 5131
+          },
+          {
+            "OP": 14739,
+            "Mês": "10/12/25",
+            "Medida": "16X31X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "87,65%",
+            "% de Apara": "12,35%",
+            "Unnamed: 2": "WELLINGTON CARLOS VIEIRA",
+            "Unnamed: 3": "QUEIJARIA CASQUINHA",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "116,6",
+            "Metros Total Produzido": 8096
+          },
+          {
+            "OP": 14702,
+            "Mês": "11/12/25",
+            "Medida": "14X17X0,16",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "80,30%",
+            "% de Apara": "19,70%",
+            "Unnamed: 2": "AGROINDUSTRIA S SEBASTIÃO",
+            "Unnamed: 3": "QUEIJO CHEDDAR FATIADO 200G SWIFT",
+            "Apara do Setor": "22,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22,4",
+            "Kg Total Produzido": "113,7",
+            "Metros Total Produzido": 5074
+          },
+          {
+            "OP": 14725,
+            "Mês": "11/12/25",
+            "Medida": "25X48X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "93,49%",
+            "% de Apara": "6,51%",
+            "Unnamed: 2": "CEPLAST",
+            "Unnamed: 3": "MUSS. SERVE BEM",
+            "Apara do Setor": "22,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22,5",
+            "Kg Total Produzido": "345,6",
+            "Metros Total Produzido": 15358
+          },
+          {
+            "OP": 14711,
+            "Mês": "11/12/25",
+            "Medida": "20X71X0,10",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "93,62%",
+            "% de Apara": "6,38%",
+            "Unnamed: 2": "COMERCIAL ATACAREJO PARAISO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "20",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "20",
+            "Kg Total Produzido": "313,7",
+            "Metros Total Produzido": 15185
+          },
+          {
+            "OP": 14796,
+            "Mês": "11/12/25",
+            "Medida": "18X24X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "86,19%",
+            "% de Apara": "13,81%",
+            "Unnamed: 2": "VIDEIRA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "16,2",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "16,2",
+            "Kg Total Produzido": "117,3",
+            "Metros Total Produzido": 7239
+          },
+          {
+            "OP": 14705,
+            "Mês": "11/12/25",
+            "Medida": "14X19,5X0,16",
+            "Material": "NP",
+            "Operador": "CAIK",
+            "Qualidade": "80,23%",
+            "% de Apara": "19,77%",
+            "Unnamed: 2": "AGROINDUSTRIA S SEBASTIÃO",
+            "Unnamed: 3": "PROV DEF BOLA 240G",
+            "Apara do Setor": "22,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22,4",
+            "Kg Total Produzido": "113,3",
+            "Metros Total Produzido": 5057
+          },
+          {
+            "OP": 14720,
+            "Mês": "11/12/25",
+            "Medida": "23X46X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "95,51%",
+            "% de Apara": "4,49%",
+            "Unnamed: 2": "ARALAT",
+            "Unnamed: 3": "MUSS BARRA ARALAT",
+            "Apara do Setor": "20,7",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "20,7",
+            "Kg Total Produzido": "460,6",
+            "Metros Total Produzido": 22258
+          },
+          {
+            "OP": 14460,
+            "Mês": "11/12/25",
+            "Medida": "24X46X0,10",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "89,96%",
+            "% de Apara": "10,04%",
+            "Unnamed: 2": "LATIC. ESTRELA D OESTE",
+            "Unnamed: 3": "MUSS. ESTRELA D OESTE",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "239,1",
+            "Metros Total Produzido": 9961
+          },
+          {
+            "OP": 14700,
+            "Mês": "12/12/25",
+            "Medida": "15,5X40X0,14",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "95,59%",
+            "% de Apara": "4,41%",
+            "Unnamed: 2": "MARIA VALERIA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "21,7",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "21,7",
+            "Kg Total Produzido": "491,6",
+            "Metros Total Produzido": 21359
+          },
+          {
+            "OP": 14759,
+            "Mês": "12/12/25",
+            "Medida": "30X44X0,09",
+            "Material": "UMR",
+            "Operador": "WELINGTON",
+            "Qualidade": "92,44%",
+            "% de Apara": "7,56%",
+            "Unnamed: 2": "FAB CONS EMA",
+            "Unnamed: 3": "SALSICHA APERITIVO 3 KGS EMA",
+            "Apara do Setor": "27",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "27",
+            "Kg Total Produzido": "357,2",
+            "Metros Total Produzido": 13227
+          },
+          {
+            "OP": 14715,
+            "Mês": "12/12/25",
+            "Medida": "37X48X0,10",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "78,04%",
+            "% de Apara": "21,96%",
+            "Unnamed: 2": "COMERCIAL ATACAREJO PARAISO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "37",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "37",
+            "Kg Total Produzido": "168,5",
+            "Metros Total Produzido": 10730
+          },
+          {
+            "OP": 14775,
+            "Mês": "12/12/25",
+            "Medida": "16X22,5X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "89,57%",
+            "% de Apara": "10,43%",
+            "Unnamed: 2": "OXENTE",
+            "Unnamed: 3": "RICOTA FRESCA OXENTE",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "138",
+            "Metros Total Produzido": 9581
+          },
+          {
+            "OP": 14701,
+            "Mês": "12/12/25",
+            "Medida": "30X40X0,18",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "79,85%",
+            "% de Apara": "20,15%",
+            "Unnamed: 2": "MARIA VALERIA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "54",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "54",
+            "Kg Total Produzido": "268",
+            "Metros Total Produzido": 4959
+          },
+          {
+            "OP": 14670,
+            "Mês": "12/12/25",
+            "Medida": "22X46X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "95,59%",
+            "% de Apara": "4,41%",
+            "Unnamed: 2": "LATIC CASSIMIRO",
+            "Unnamed: 3": "Q. MUSS. QUATRO IRMAOS",
+            "Apara do Setor": "19,8",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "19,8",
+            "Kg Total Produzido": "449,2",
+            "Metros Total Produzido": 22658
+          },
+          {
+            "OP": 14729,
+            "Mês": "15/12/25",
+            "Medida": "17X23,5X0,12",
+            "Material": "NP",
+            "Operador": "CAIK",
+            "Qualidade": "70,39%",
+            "% de Apara": "29,61%",
+            "Unnamed: 2": "BASLEITE",
+            "Unnamed: 3": "RICOTA FRESCA BASLEITE",
+            "Apara do Setor": "20,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "20,4",
+            "Kg Total Produzido": "68,9",
+            "Metros Total Produzido": 3376
+          },
+          {
+            "OP": 14707,
+            "Mês": "15/12/25",
+            "Medida": "18,5X32X0,10",
+            "Material": "UMR",
+            "Operador": "CAIK",
+            "Qualidade": "87,01%",
+            "% de Apara": "12,99%",
+            "Unnamed: 2": "RODRIGO MARCHI BRASIL",
+            "Unnamed: 3": "CASA DE CARNES VILLA BEEF",
+            "Apara do Setor": "18,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "18,5",
+            "Kg Total Produzido": "142,4",
+            "Metros Total Produzido": 7696
+          },
+          {
+            "OP": 14757,
+            "Mês": "15/12/25",
+            "Medida": "20X27X0,12",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "65,86%",
+            "% de Apara": "34,14%",
+            "Unnamed: 2": "GUERRO & PAGNUSSAT",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "70,3",
+            "Metros Total Produzido": 2928
+          },
+          {
+            "OP": 14756,
+            "Mês": "15/12/25",
+            "Medida": "18X43X0,12",
+            "Material": "UMR",
+            "Operador": "CAIK",
+            "Qualidade": "79,79%",
+            "% de Apara": "20,21%",
+            "Unnamed: 2": "GUERRO & PAGNUSSAT",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "106,9",
+            "Metros Total Produzido": 4947
+          },
+          {
+            "OP": 14453,
+            "Mês": "15/12/25",
+            "Medida": "18X22X0,16",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "87,70%",
+            "% de Apara": "12,30%",
+            "Unnamed: 2": "AGROINDUSTRIA S SEBASTIÃO",
+            "Unnamed: 3": "Q MUSS FAT BELO MINAS",
+            "Apara do Setor": "35,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "35,2",
+            "Kg Total Produzido": "286,2",
+            "Metros Total Produzido": 43630
+          },
+          {
+            "OP": 14708,
+            "Mês": "15/12/25",
+            "Medida": "17X23X0,16",
+            "Material": "NP",
+            "Operador": "LUCAS",
+            "Qualidade": "86,65%",
+            "% de Apara": "13,35%",
+            "Unnamed: 2": "LATIC. DA COSTA E PELISSARI",
+            "Unnamed: 3": "MATEIGA COM SAL PELISSARI",
+            "Apara do Setor": "27,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "27,2",
+            "Kg Total Produzido": "203,7",
+            "Metros Total Produzido": 7487
+          },
+          {
+            "OP": 14760,
+            "Mês": "15/12/25",
+            "Medida": "35x42x0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "90,84%",
+            "% de Apara": "9,16%",
+            "Unnamed: 2": "FAB CONS EMA",
+            "Unnamed: 3": "LING. COZIDA BOVINA EMA",
+            "Apara do Setor": "31,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "31,5",
+            "Kg Total Produzido": "343,7",
+            "Metros Total Produzido": 10909
+          },
+          {
+            "OP": 14747,
+            "Mês": "15/12/25",
+            "Medida": "23X30X0,12",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "79,33%",
+            "% de Apara": "20,67%",
+            "Unnamed: 2": "LAVINIA NATHIELLE GONTIJO CUNHA",
+            "Unnamed: 3": "Q. CANASTRA ARTESANAL SOBERANO",
+            "Apara do Setor": "27,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "27,6",
+            "Kg Total Produzido": "133,5",
+            "Metros Total Produzido": 9836
+          },
+          {
+            "OP": 14755,
+            "Mês": "15/12/25",
+            "Medida": "17X42X0,12",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "78,73%",
+            "% de Apara": "21,27%",
+            "Unnamed: 2": "GUERRO & PAGNUSSAT",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "20,4",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "20,4",
+            "Kg Total Produzido": "95,9",
+            "Metros Total Produzido": 11355
+          },
+          {
+            "OP": 14709,
+            "Mês": "15/12/25",
+            "Medida": "17X23X0,16",
+            "Material": "NP",
+            "Operador": "LUCAS",
+            "Qualidade": "79,16%",
+            "% de Apara": "20,84%",
+            "Unnamed: 2": "LATICINIOS DA COSTA E PELISSARI",
+            "Unnamed: 3": "MANTEIGA SEM SAL",
+            "Apara do Setor": "27,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "27,2",
+            "Kg Total Produzido": "130,5",
+            "Metros Total Produzido": 22110
+          },
+          {
+            "OP": 14761,
+            "Mês": "16/12/25",
+            "Medida": "40X53X0,10",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "92,05%",
+            "% de Apara": "7,95%",
+            "Unnamed: 2": "FRIGODASKO",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "40",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "40",
+            "Kg Total Produzido": "503,3",
+            "Metros Total Produzido": 12580
+          },
+          {
+            "OP": 14595,
+            "Mês": "16/12/25",
+            "Medida": "22X30X0,11",
+            "Material": "NP",
+            "Operador": "CAIK",
+            "Qualidade": "65,18%",
+            "% de Apara": "34,82%",
+            "Unnamed: 2": "PRIME PORK IND E COM",
+            "Unnamed: 3": "MEDALHAO DE FRANGO BUENO",
+            "Apara do Setor": "24,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24,2",
+            "Kg Total Produzido": "69,5",
+            "Metros Total Produzido": 2871
+          },
+          {
+            "OP": 14764,
+            "Mês": "16/12/25",
+            "Medida": "9X24X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "85,27%",
+            "% de Apara": "14,73%",
+            "Unnamed: 2": "ARC LOGISTICA E ALIMENTOS",
+            "Unnamed: 3": "Q. PROV. 200G TANIA",
+            "Apara do Setor": "8,1",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "8,1",
+            "Kg Total Produzido": "55",
+            "Metros Total Produzido": 6789
+          },
+          {
+            "OP": 14774,
+            "Mês": "16/12/25",
+            "Medida": "26X23,5X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "77,11%",
+            "% de Apara": "22,89%",
+            "Unnamed: 2": "BASLEITE IND E COM DE LACTEOS",
+            "Unnamed: 3": "MUSS RECHEADA COM REQ. BASLEITE",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "62,9",
+            "Metros Total Produzido": 4367
+          },
+          {
+            "OP": 14763,
+            "Mês": "16/12/25",
+            "Medida": "16X18X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "92,75%",
+            "% de Apara": "7,25%",
+            "Unnamed: 2": "LATICINIO GUIMARANIA",
+            "Unnamed: 3": "MINAS PADRAO FRAC CASCATA",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "198,6",
+            "Metros Total Produzido": 13789
+          },
+          {
+            "OP": 14781,
+            "Mês": "16/12/25",
+            "Medida": "24X48X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "87,21%",
+            "% de Apara": "12,79%",
+            "Unnamed: 2": "EDGAR RISSARI",
+            "Unnamed: 3": "Q. MUSS FAZENDINHA",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "168,9",
+            "Metros Total Produzido": 7808
+          },
+          {
+            "OP": 14493,
+            "Mês": "16/12/25",
+            "Medida": "19X31X0,10",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "86,66%",
+            "% de Apara": "13,34%",
+            "Unnamed: 2": "GENILSON JESUS LOVERDI",
+            "Unnamed: 3": "MANDIOCA LOVERDI",
+            "Apara do Setor": "19",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "19",
+            "Kg Total Produzido": "142,4",
+            "Metros Total Produzido": 7493
+          },
+          {
+            "OP": 14753,
+            "Mês": "16/12/25",
+            "Medida": "12X42X0,12",
+            "Material": "UMR",
+            "Operador": "THIAGO",
+            "Qualidade": "80,62%",
+            "% de Apara": "19,38%",
+            "Unnamed: 2": "GUERRO & PAGNUSSAT",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "14,4",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "14,4",
+            "Kg Total Produzido": "74,3",
+            "Metros Total Produzido": 5158
+          },
+          {
+            "OP": 14782,
+            "Mês": "16/12/25",
+            "Medida": "23X65X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "92,32%",
+            "% de Apara": "7,68%",
+            "Unnamed: 2": "ARC LOGISTICA E ALIMENTOS",
+            "Unnamed: 3": "PROV. 5 KG TANIA",
+            "Apara do Setor": "20,7",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "20,7",
+            "Kg Total Produzido": "269,6",
+            "Metros Total Produzido": 17857
+          },
+          {
+            "OP": 14754,
+            "Mês": "17/12/25",
+            "Medida": "14X24X0,12",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "75,22%",
+            "% de Apara": "24,78%",
+            "Unnamed: 2": "GUERRO & PAGNUSSAT",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "16,8",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "16,8",
+            "Kg Total Produzido": "67,8",
+            "Metros Total Produzido": 4034
+          },
+          {
+            "OP": 14748,
+            "Mês": "17/12/25",
+            "Medida": "15X26X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "92,84%",
+            "% de Apara": "7,16%",
+            "Unnamed: 2": "T & G",
+            "Unnamed: 3": "REQ. DE CORTE MIMO PONTAL",
+            "Apara do Setor": "13,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "13,5",
+            "Kg Total Produzido": "188,6",
+            "Metros Total Produzido": 13968
+          },
+          {
+            "OP": 14746,
+            "Mês": "17/12/25",
+            "Medida": "15X25X0,10",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "75,65%",
+            "% de Apara": "24,35%",
+            "Unnamed: 2": "LENISLEY",
+            "Unnamed: 3": "DIVERSOS JM",
+            "Apara do Setor": "15",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "15",
+            "Kg Total Produzido": "61,6",
+            "Metros Total Produzido": 4106
+          },
+          {
+            "OP": 14758,
+            "Mês": "17/12/25",
+            "Medida": "20X28X0,09",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "84,60%",
+            "% de Apara": "15,40%",
+            "Unnamed: 2": "FAB CONS EMA",
+            "Unnamed: 3": "SALSICHA 500G EMA",
+            "Apara do Setor": "18",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "18",
+            "Kg Total Produzido": "116,9",
+            "Metros Total Produzido": 6494
+          },
+          {
+            "OP": 14788,
+            "Mês": "17/12/25",
+            "Medida": "17X26X0,11",
+            "Material": "NP",
+            "Operador": "CAIK",
+            "Qualidade": "82,60%",
+            "% de Apara": "17,40%",
+            "Unnamed: 2": "GM FLEX",
+            "Unnamed: 3": "TORRESMO TUIM",
+            "Apara do Setor": "18,7",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "18,7",
+            "Kg Total Produzido": "107,5",
+            "Metros Total Produzido": 5748
+          },
+          {
+            "OP": 14675,
+            "Mês": "17/12/25",
+            "Medida": "24X46X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "93,69%",
+            "% de Apara": "6,31%",
+            "Unnamed: 2": "SG LAC IND DE LATIC",
+            "Unnamed: 3": "MUSSARELA SG LAC",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "342,2",
+            "Metros Total Produzido": 15571
+          },
+          {
+            "OP": 14673,
+            "Mês": "17/12/25",
+            "Medida": "36X43X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "73,49%",
+            "% de Apara": "26,51%",
+            "Unnamed: 2": "VIDEIRA PACK",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "32,4",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "32,4",
+            "Kg Total Produzido": "122,2",
+            "Metros Total Produzido": 3795
+          },
+          {
+            "OP": 14751,
+            "Mês": "17/12/25",
+            "Medida": "19X22X0,10",
+            "Material": "NP",
+            "Operador": "LUCAS",
+            "Qualidade": "67,69%",
+            "% de Apara": "32,31%",
+            "Unnamed: 2": "MENDONCA E MENDONCA",
+            "Unnamed: 3": "DIVERSOS",
+            "Apara do Setor": "19",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "19",
+            "Kg Total Produzido": "58,8",
+            "Metros Total Produzido": 3094
+          },
+          {
+            "OP": 14749,
+            "Mês": "17/12/25",
+            "Medida": "15X26X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "93,03%",
+            "% de Apara": "6,97%",
+            "Unnamed: 2": "T & G",
+            "Unnamed: 3": "QUEIJO COALHO PONTAL",
+            "Apara do Setor": "13,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "13,5",
+            "Kg Total Produzido": "193,8",
+            "Metros Total Produzido": 14353
+          },
+          {
+            "OP": 14779,
+            "Mês": "18/12/25",
+            "Medida": "20X44X0,11",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "64,91%",
+            "% de Apara": "35,09%",
+            "Unnamed: 2": "VACUOMATIC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "22",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "22",
+            "Kg Total Produzido": "62,7",
+            "Metros Total Produzido": 2849
+          },
+          {
+            "OP": 14780,
+            "Mês": "18/12/25",
+            "Medida": "30X42X0,11",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "54,04%",
+            "% de Apara": "45,96%",
+            "Unnamed: 2": "VACUOMATIC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "33",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "33",
+            "Kg Total Produzido": "71,8",
+            "Metros Total Produzido": 7984
+          },
+          {
+            "OP": 14770,
+            "Mês": "18/12/25",
+            "Medida": "18X36X0,12",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "86,85%",
+            "% de Apara": "13,15%",
+            "Unnamed: 2": "UDIFRIOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "164,2",
+            "Metros Total Produzido": 7600
+          },
+          {
+            "OP": 14594,
+            "Mês": "18/12/25",
+            "Medida": "22X30X0,11",
+            "Material": "NP",
+            "Operador": "CAIK",
+            "Qualidade": "64,25%",
+            "% de Apara": "35,75%",
+            "Unnamed: 2": "PRIME PORK IND E COM",
+            "Unnamed: 3": "MEDALHÃO SUINO BUENO",
+            "Apara do Setor": "24,2",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24,2",
+            "Kg Total Produzido": "67,7",
+            "Metros Total Produzido": 9030
+          },
+          {
+            "OP": 14777,
+            "Mês": "18/12/25",
+            "Medida": "25X48X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "96,10%",
+            "% de Apara": "3,90%",
+            "Unnamed: 2": "CEPLAST",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "22,5",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "22,5",
+            "Kg Total Produzido": "576,4",
+            "Metros Total Produzido": 25613
+          },
+          {
+            "OP": 14773,
+            "Mês": "18/12/25",
+            "Medida": "25X37X0,14",
+            "Material": "UMR",
+            "Operador": "CAIK",
+            "Qualidade": "82,11%",
+            "% de Apara": "17,89%",
+            "Unnamed: 2": "UDIFRIOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "35",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "35",
+            "Kg Total Produzido": "195,6",
+            "Metros Total Produzido": 5586
+          },
+          {
+            "OP": 14769,
+            "Mês": "18/12/25",
+            "Medida": "18X25X0,12",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "81,55%",
+            "% de Apara": "18,45%",
+            "Unnamed: 2": "UDIFRIOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "117,1",
+            "Metros Total Produzido": 5420
+          },
+          {
+            "OP": 14776,
+            "Mês": "18/12/25",
+            "Medida": "25X45X0,12",
+            "Material": "UMR",
+            "Operador": "WELINGTON",
+            "Qualidade": "82,22%",
+            "% de Apara": "17,78%",
+            "Unnamed: 2": "RB CARNES COM DE ALIMENTOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "30",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "30",
+            "Kg Total Produzido": "168,7",
+            "Metros Total Produzido": 5845
+          },
+          {
+            "OP": 14733,
+            "Mês": "18/12/25",
+            "Medida": "7,9X0,09",
+            "Material": "TRIPA",
+            "Operador": "WELINGTON",
+            "Qualidade": "97,26%",
+            "% de Apara": "2,74%",
+            "Unnamed: 2": "MARIA VALERIA",
+            "Unnamed: 3": "MORTADELA",
+            "Apara do Setor": "7,82",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "7,82",
+            "Kg Total Produzido": "285",
+            "Metros Total Produzido": 36441
+          },
+          {
+            "OP": 14783,
+            "Mês": "18/12/25",
+            "Medida": "15X37X0,09",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "81,53%",
+            "% de Apara": "18,47%",
+            "Unnamed: 2": "ARC LOGISTICA E ALIMENTOS",
+            "Unnamed: 3": "PROVOLONE 1 KG TANIA",
+            "Apara do Setor": "13,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "13,5",
+            "Kg Total Produzido": "73,1",
+            "Metros Total Produzido": 5468
+          },
+          {
+            "OP": 14792,
+            "Mês": "19/12/25",
+            "Medida": "24X49X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "63,88%",
+            "% de Apara": "36,12%",
+            "Unnamed: 2": "RUARO IND E COM DE LATIC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "59,8",
+            "Metros Total Produzido": 5740
+          },
+          {
+            "OP": 14784,
+            "Mês": "19/12/25",
+            "Medida": "9X33X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "88,05%",
+            "% de Apara": "11,95%",
+            "Unnamed: 2": "ARC LOGISTICA E ALIMENTOS",
+            "Unnamed: 3": "Q. PROV. 400G TANIA",
+            "Apara do Setor": "8,1",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "8,1",
+            "Kg Total Produzido": "67,8",
+            "Metros Total Produzido": 8359
+          },
+          {
+            "OP": 14772,
+            "Mês": "19/12/25",
+            "Medida": "19X37X0,14",
+            "Material": "UMR",
+            "Operador": "LUCAS",
+            "Qualidade": "85,33%",
+            "% de Apara": "14,67%",
+            "Unnamed: 2": "UDIFRIOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "25,2",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "25,2",
+            "Kg Total Produzido": "171,8",
+            "Metros Total Produzido": 6816
+          },
+          {
+            "OP": 14771,
+            "Mês": "18/12/25",
+            "Medida": "18X26X0,14",
+            "Material": "UMR",
+            "Operador": "CAIK",
+            "Qualidade": "78,26%",
+            "% de Apara": "21,74%",
+            "Unnamed: 2": "UDIFRIOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "25,2",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "25,2",
+            "Kg Total Produzido": "115,9",
+            "Metros Total Produzido": 4599
+          },
+          {
+            "OP": 14787,
+            "Mês": "19/12/25",
+            "Medida": "24X48X0,10",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "80,88%",
+            "% de Apara": "19,12%",
+            "Unnamed: 2": "DALAC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "125,5",
+            "Metros Total Produzido": 5229
+          },
+          {
+            "OP": 14768,
+            "Mês": "19/12/25",
+            "Medida": "15X22X0,12",
+            "Material": "NP",
+            "Operador": "CAIK",
+            "Qualidade": "83,97%",
+            "% de Apara": "16,03%",
+            "Unnamed: 2": "UDIFRIOS",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "18",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "18",
+            "Kg Total Produzido": "112,3",
+            "Metros Total Produzido": 28560
+          },
+          {
+            "OP": 14674,
+            "Mês": "19/12/25",
+            "Medida": "36X43X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "73,09%",
+            "% de Apara": "26,91%",
+            "Unnamed: 2": "VIDEIRA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "32,4",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "32,4",
+            "Kg Total Produzido": "120,4",
+            "Metros Total Produzido": 3644
+          },
+          {
+            "OP": 14786,
+            "Mês": "19/12/25",
+            "Medida": "20X28X0,10",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "69,42%",
+            "% de Apara": "30,58%",
+            "Unnamed: 2": "DALAC",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "20",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "20",
+            "Kg Total Produzido": "65,4",
+            "Metros Total Produzido": 3270
+          },
+          {
+            "OP": 14795,
+            "Mês": "19/12/25",
+            "Medida": "24X50X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "90,78%",
+            "% de Apara": "9,22%",
+            "Unnamed: 2": "RUARO IND E COM DE LATIC",
+            "Unnamed: 3": "MUSS. 4 KGS VO RUARO",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "234,3",
+            "Metros Total Produzido": 10844
+          },
+          {
+            "OP": 14798,
+            "Mês": "20/12/25",
+            "Medida": "25X48X0,09",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "90,55%",
+            "% de Apara": "9,45%",
+            "Unnamed: 2": "CEPLAST",
+            "Unnamed: 3": "Q. MUSS. PINHEIRO",
+            "Apara do Setor": "22,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "22,5",
+            "Kg Total Produzido": "238,2",
+            "Metros Total Produzido": 10585
+          },
+          {
+            "OP": 14744,
+            "Mês": "22/12/25",
+            "Medida": "15X30X0,11",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "74,42%",
+            "% de Apara": "25,58%",
+            "Unnamed: 2": "LUCAS MATIAS PIO LATIC",
+            "Unnamed: 3": "MUSS. TEM PALITO ARMAZEM",
+            "Apara do Setor": "16,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "16,5",
+            "Kg Total Produzido": "64,5",
+            "Metros Total Produzido": 3908
+          },
+          {
+            "OP": 14853,
+            "Mês": "22/12/25",
+            "Medida": "18X23X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "76,00%",
+            "% de Apara": "24,00%",
+            "Unnamed: 2": "LATIC NOVA ALEMANHA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "16,2",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "16,2",
+            "Kg Total Produzido": "67,5",
+            "Metros Total Produzido": 4166
+          },
+          {
+            "OP": 14790,
+            "Mês": "20/12/25",
+            "Medida": "15X28X0,09",
+            "Material": "ENCO",
+            "Operador": "CAIK",
+            "Qualidade": "90,47%",
+            "% de Apara": "9,53%",
+            "Unnamed: 2": "JOSE TARCISO",
+            "Unnamed: 3": "Q. MINAS ARTESANAL JOIA DO CERRADO",
+            "Apara do Setor": "13,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "13,5",
+            "Kg Total Produzido": "141,7",
+            "Metros Total Produzido": 9487
+          },
+          {
+            "OP": 14811,
+            "Mês": "20/12/25",
+            "Medida": "17X39X0,09",
+            "Material": "UMR",
+            "Operador": "WELINGTON",
+            "Qualidade": "76,02%",
+            "% de Apara": "23,98%",
+            "Unnamed: 2": "DI MANGIARE",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "15,3",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "15,3",
+            "Kg Total Produzido": "63,8",
+            "Metros Total Produzido": 4169
+          },
+          {
+            "OP": 14812,
+            "Mês": "20/12/25",
+            "Medida": "24X48X0,10",
+            "Material": "ENCO",
+            "Operador": "WELINGTON",
+            "Qualidade": "90,47%",
+            "% de Apara": "9,53%",
+            "Unnamed: 2": "LATIC. VALE GUAPORE",
+            "Unnamed: 3": "MUSSARELA GUAPORE",
+            "Apara do Setor": "24",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "24",
+            "Kg Total Produzido": "251,8",
+            "Metros Total Produzido": 10490
+          },
+          {
+            "OP": 14800,
+            "Mês": "20/12/25",
+            "Medida": "18X21X0,10",
+            "Material": "NP",
+            "Operador": "WELINGTON",
+            "Qualidade": "70,87%",
+            "% de Apara": "29,13%",
+            "Unnamed: 2": "PIETRO GIULIANO BONURA",
+            "Unnamed: 3": "Q M FRESCAL BONURA",
+            "Apara do Setor": "18",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "18",
+            "Kg Total Produzido": "61,8",
+            "Metros Total Produzido": 3433
+          },
+          {
+            "OP": 14789,
+            "Mês": "20/12/25",
+            "Medida": "13X26X0,10",
+            "Material": "UMR",
+            "Operador": "THIAGO",
+            "Qualidade": "75,66%",
+            "% de Apara": "24,34%",
+            "Unnamed: 2": "CONFIANÇA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "15,6",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "15,6",
+            "Kg Total Produzido": "64,1",
+            "Metros Total Produzido": 4109
+          },
+          {
+            "OP": 14832,
+            "Mês": "20/12/25",
+            "Medida": "25X45X0,10",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "79,32%",
+            "% de Apara": "20,68%",
+            "Unnamed: 2": "LATIC COSTA E PELISSARI",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "25",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "25",
+            "Kg Total Produzido": "120,9",
+            "Metros Total Produzido": 4836
+          },
+          {
+            "OP": 14821,
+            "Mês": "22/12/25",
+            "Medida": "24X50X0,09",
+            "Material": "ENCO",
+            "Operador": "THIAGO",
+            "Qualidade": "88,04%",
+            "% de Apara": "11,96%",
+            "Unnamed: 2": "COOP AGRP OURO VERDE",
+            "Unnamed: 3": "MUSS. COMOV",
+            "Apara do Setor": "21,6",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "21,6",
+            "Kg Total Produzido": "180,6",
+            "Metros Total Produzido": 8359
+          },
+          {
+            "OP": 14853,
+            "Mês": "22/12/25",
+            "Medida": "18X23X0,09",
+            "Material": "ENCO",
+            "Operador": "LUCAS",
+            "Qualidade": "76,00%",
+            "% de Apara": "24,00%",
+            "Unnamed: 2": "LATIC. NOVA ALEMANHA",
+            "Unnamed: 3": "LISO",
+            "Apara do Setor": "16,2",
+            "_Impresso / Liso": "LISO",
+            "g/mts Programado": "16,2",
+            "Kg Total Produzido": "67,5",
+            "Metros Total Produzido": 4166
+          },
+          {
+            "OP": 14744,
+            "Mês": "22/12/25",
+            "Medida": "15X30X0,11",
+            "Material": "NP",
+            "Operador": "THIAGO",
+            "Qualidade": "74,42%",
+            "% de Apara": "25,58%",
+            "Unnamed: 2": "LUCAS MATIAS PIO LATIC",
+            "Unnamed: 3": "MUSS. PALITO T. NOZINHO",
+            "Apara do Setor": "16,5",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "16,5",
+            "Kg Total Produzido": "64,5",
+            "Metros Total Produzido": 3908
+          },
+          {
+            "OP": 14807,
+            "Mês": "22/12/25",
+            "Medida": "7,8X0,09",
+            "Material": "TRIPA",
+            "Operador": "THIAGO",
+            "Qualidade": "98,49%",
+            "% de Apara": "1,51%",
+            "Unnamed: 2": "MARIA VALERIA",
+            "Unnamed: 3": "MORTADELA BLANCA",
+            "Apara do Setor": "7,72",
+            "_Impresso / Liso": "IMP",
+            "g/mts Programado": "7,72",
+            "Kg Total Produzido": "511,1",
+            "Metros Total Produzido": 65965
+          }
+        ],
+        "row_count": 120,
+        "created_at": "2026-01-01T23:29:45.148954+00:00"
+      }
+    ],
+    "ai_decisions": [
+      {
+        "id": "e30cc74d-2760-4395-b8b1-b6608f8a6b03",
+        "dataset_id": "36f1b01c-bb20-4907-b70d-22c5f229dd57",
+        "dataset_type": "production",
+        "field_map": {
+          "CNPJ/CPF": "descricao",
+          "MATERIAL": "descricao",
+          "PRODUTOS": "descricao",
+          "OBSERVAÇÃO": "observacao",
+          "ATIVO/INATIVO": "status",
+          "RAZÃO SOCIAL": "descricao",
+          "D. ULT. PEDIDO": "data"
+        },
+        "metrics": [
+          {
+            "id": "linhas",
+            "field": "linhas",
+            "label": "Total de Registros",
+            "value": "3",
+            "format": "number",
+            "rawValue": 3
+          },
+          {
+            "id": "colunas",
+            "field": "colunas",
+            "label": "Colunas",
+            "value": "7",
+            "format": "number",
+            "rawValue": 7
+          },
+          {
+            "id": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_unicos",
+            "field": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_unicos",
+            "label": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Unicos",
+            "value": "3",
+            "format": "number",
+            "rawValue": 3
+          },
+          {
+            "id": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal",
+            "field": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal",
+            "label": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Principal",
+            "value": "Liso",
+            "format": "number",
+            "rawValue": 0
+          },
+          {
+            "id": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal_count",
+            "field": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal_count",
+            "label": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Principal Count",
+            "value": "1",
+            "format": "number",
+            "rawValue": 1
+          }
+        ],
+        "charts": [],
+        "confidence": 0.9,
+        "created_at": "2026-01-01T21:12:50.21981+00:00"
+      },
+      {
+        "id": "6e4def21-aa83-4d94-8c84-5176d0665a3b",
+        "dataset_id": "ca33f39a-7232-4441-9d76-0c46d1948787",
+        "dataset_type": "financeiro",
+        "field_map": {
+          "OP": "forma_pagamento",
+          "Mês": "data",
+          "Medida": "observacao",
+          "Operador": "categoria",
+          "Qualidade": "descricao",
+          "% de Apara": "custo_unitario",
+          "Apara do Setor": "categoria",
+          "g/mts Programado": "status",
+          "Kg Total Produzido": "valor",
+          "Metros Total Produzido": "valor"
+        },
+        "metrics": [
+          {
+            "id": "linhas",
+            "field": "linhas",
+            "label": "Total de Registros",
+            "value": "120",
+            "format": "number",
+            "rawValue": 120
+          },
+          {
+            "id": "colunas",
+            "field": "colunas",
+            "label": "Colunas",
+            "value": "14",
+            "format": "number",
+            "rawValue": 14
+          },
+          {
+            "id": "kg_total_produzido_total",
+            "field": "kg_total_produzido_total",
+            "label": "Kg Total Produzido Total",
+            "value": "20.168",
+            "format": "number",
+            "rawValue": 20168
+          },
+          {
+            "id": "kg_total_produzido_media",
+            "field": "kg_total_produzido_media",
+            "label": "Kg Total Produzido Media",
+            "value": "168,07",
+            "format": "number",
+            "rawValue": 168.07
+          },
+          {
+            "id": "kg_total_produzido_max",
+            "field": "kg_total_produzido_max",
+            "label": "Kg Total Produzido Max",
+            "value": "717,2",
+            "format": "number",
+            "rawValue": 717.2
+          },
+          {
+            "id": "kg_total_produzido_min",
+            "field": "kg_total_produzido_min",
+            "label": "Kg Total Produzido Min",
+            "value": "48,9",
+            "format": "number",
+            "rawValue": 48.9
+          },
+          {
+            "id": "metros_total_produzido_total",
+            "field": "metros_total_produzido_total",
+            "label": "Metros Total Produzido Total",
+            "value": "1.148.601",
+            "format": "number",
+            "rawValue": 1148601
+          },
+          {
+            "id": "metros_total_produzido_media",
+            "field": "metros_total_produzido_media",
+            "label": "Metros Total Produzido Media",
+            "value": "9.571,67",
+            "format": "number",
+            "rawValue": 9571.67
+          }
+        ],
+        "charts": [
+          {
+            "id": "kg_total_produzido_por_material",
+            "data": [
+              {
+                "name": "Enco",
+                "value": 11986.9
+              },
+              {
+                "name": "Np",
+                "value": 3847.5
+              },
+              {
+                "name": "Tripa",
+                "value": 941.3
+              },
+              {
+                "name": "Umr",
+                "value": 3392.3
+              }
+            ],
+            "type": "bar",
+            "xKey": "Material",
+            "yKey": "Kg Total Produzido",
+            "title": "Kg Total Produzido por Material"
+          },
+          {
+            "id": "metros_total_produzido_por_material",
+            "data": [
+              {
+                "name": "Enco",
+                "value": 609790
+              },
+              {
+                "name": "Np",
+                "value": 265989
+              },
+              {
+                "name": "Tripa",
+                "value": 107859
+              },
+              {
+                "name": "Umr",
+                "value": 164963
+              }
+            ],
+            "type": "bar",
+            "xKey": "Material",
+            "yKey": "Metros Total Produzido",
+            "title": "Metros Total Produzido por Material"
+          },
+          {
+            "id": "kg_total_produzido_por__impresso___liso",
+            "data": [
+              {
+                "name": "Imp",
+                "value": 13182.5
+              },
+              {
+                "name": "Liso",
+                "value": 6727
+              },
+              {
+                "name": "Np",
+                "value": 77
+              },
+              {
+                "name": "Umr",
+                "value": 181.5
+              }
+            ],
+            "type": "bar",
+            "xKey": "_Impresso / Liso",
+            "yKey": "Kg Total Produzido",
+            "title": "Kg Total Produzido por _Impresso / Liso"
+          },
+          {
+            "id": "metros_total_produzido_por__impresso___liso",
+            "data": [
+              {
+                "name": "Imp",
+                "value": 775611
+              },
+              {
+                "name": "Liso",
+                "value": 359991
+              },
+              {
+                "name": "Np",
+                "value": 4752
+              },
+              {
+                "name": "Umr",
+                "value": 8247
+              }
+            ],
+            "type": "bar",
+            "xKey": "_Impresso / Liso",
+            "yKey": "Metros Total Produzido",
+            "title": "Metros Total Produzido por _Impresso / Liso"
+          }
+        ],
+        "confidence": 0.9,
+        "created_at": "2026-01-01T23:29:45.282086+00:00"
+      }
+    ],
+    "dashboards": [
+      {
+        "id": "d9faeb22-75c9-4125-97cf-33b6f065ba4d",
+        "dataset_id": "36f1b01c-bb20-4907-b70d-22c5f229dd57",
+        "ai_decision_id": "e30cc74d-2760-4395-b8b1-b6608f8a6b03",
+        "title": "RELAÇÃO DE CLIENTES ANDRÉA - PE",
+        "description": "",
+        "created_at": "2026-01-01T21:12:50.318217+00:00"
+      },
+      {
+        "id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "dataset_id": "ca33f39a-7232-4441-9d76-0c46d1948787",
+        "ai_decision_id": "6e4def21-aa83-4d94-8c84-5176d0665a3b",
+        "title": "Controle de Qualidade - Produção e Apara - DEZEMBRO 2025 - Extrusora",
+        "description": "",
+        "created_at": "2026-01-01T23:29:45.377473+00:00"
+      }
+    ],
+    "dashboard_blocks": [
+      {
+        "id": "e7f6be81-c078-41bf-a24e-bf8a7df2d4fe",
+        "dashboard_id": "d9faeb22-75c9-4125-97cf-33b6f065ba4d",
+        "type": "metric",
+        "title": "Total de Registros",
+        "config": {
+          "id": "linhas",
+          "field": "linhas",
+          "label": "Total de Registros",
+          "value": "3",
+          "format": "number",
+          "rawValue": 3
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 0,
+          "row": 0
+        },
+        "created_at": "2026-01-01T21:12:50.406645+00:00"
+      },
+      {
+        "id": "0adae322-b9a6-472e-a57d-647ef5949d10",
+        "dashboard_id": "d9faeb22-75c9-4125-97cf-33b6f065ba4d",
+        "type": "metric",
+        "title": "Colunas",
+        "config": {
+          "id": "colunas",
+          "field": "colunas",
+          "label": "Colunas",
+          "value": "7",
+          "format": "number",
+          "rawValue": 7
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 1,
+          "row": 0
+        },
+        "created_at": "2026-01-01T21:12:50.406645+00:00"
+      },
+      {
+        "id": "b6d8f8ae-941f-4825-a7b9-06b30ab6f41a",
+        "dashboard_id": "d9faeb22-75c9-4125-97cf-33b6f065ba4d",
+        "type": "metric",
+        "title": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Unicos",
+        "config": {
+          "id": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_unicos",
+          "field": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_unicos",
+          "label": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Unicos",
+          "value": "3",
+          "format": "number",
+          "rawValue": 3
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 2,
+          "row": 0
+        },
+        "created_at": "2026-01-01T21:12:50.406645+00:00"
+      },
+      {
+        "id": "968312fb-f415-481f-a867-d67cb638d00f",
+        "dashboard_id": "d9faeb22-75c9-4125-97cf-33b6f065ba4d",
+        "type": "metric",
+        "title": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Principal",
+        "config": {
+          "id": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal",
+          "field": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal",
+          "label": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Principal",
+          "value": "Liso",
+          "format": "number",
+          "rawValue": 0
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 3,
+          "row": 0
+        },
+        "created_at": "2026-01-01T21:12:50.406645+00:00"
+      },
+      {
+        "id": "e3ed2d9b-cc72-430c-ab7c-4a0a3de74986",
+        "dashboard_id": "d9faeb22-75c9-4125-97cf-33b6f065ba4d",
+        "type": "metric",
+        "title": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Principal Count",
+        "config": {
+          "id": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal_count",
+          "field": "produtos_mussarela_4_kg__kit_provoleto__provolone_mussarela__mussarela_redonda__bolinha_condimentada__m__cabacinha__m__fracionada__requeijão_500g_principal_count",
+          "label": "Produtos Mussarela 4 Kg  Kit Provoleto  Provolone Mussarela  Mussarela Redonda  Bolinha Condimentada  M  Cabacinha  M  Fracionada  RequeijãO 500g Principal Count",
+          "value": "1",
+          "format": "number",
+          "rawValue": 1
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 4,
+          "row": 0
+        },
+        "created_at": "2026-01-01T21:12:50.406645+00:00"
+      },
+      {
+        "id": "84f3ac8b-362a-410a-b77e-e572217eca27",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Total de Registros",
+        "config": {
+          "field": "linhas",
+          "label": "Total de Registros",
+          "value": "120",
+          "format": "number",
+          "rawValue": 120
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 0,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "037f07db-29f0-46f0-8166-3613a4604b27",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Colunas",
+        "config": {
+          "field": "colunas",
+          "label": "Colunas",
+          "value": "14",
+          "format": "number",
+          "rawValue": 14
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 1,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "9334c8a7-de38-4d93-b442-8aec42c4f3a4",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Kg Total Produzido Total",
+        "config": {
+          "field": "kg_total_produzido_total",
+          "label": "Kg Total Produzido Total",
+          "value": "20.168",
+          "format": "number",
+          "rawValue": 20168
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 2,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "a0a16646-d460-4803-8198-1d300f5d85df",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Kg Total Produzido Media",
+        "config": {
+          "field": "kg_total_produzido_media",
+          "label": "Kg Total Produzido Media",
+          "value": "168,07",
+          "format": "number",
+          "rawValue": 168.07
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 3,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "2ad2ea8f-2a59-4d86-b696-37ca5e1ef7ce",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Kg Total Produzido Max",
+        "config": {
+          "field": "kg_total_produzido_max",
+          "label": "Kg Total Produzido Max",
+          "value": "717,2",
+          "format": "number",
+          "rawValue": 717.2
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 4,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "4f58153d-b913-472d-89ed-7753f7bef880",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Kg Total Produzido Min",
+        "config": {
+          "field": "kg_total_produzido_min",
+          "label": "Kg Total Produzido Min",
+          "value": "48,9",
+          "format": "number",
+          "rawValue": 48.9
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 5,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "8376dbb8-3fe0-4089-9b84-b7ec925e0a11",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Metros Total Produzido Total",
+        "config": {
+          "field": "metros_total_produzido_total",
+          "label": "Metros Total Produzido Total",
+          "value": "1.148.601",
+          "format": "number",
+          "rawValue": 1148601
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 6,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "b02bd742-6260-441e-ab92-abe7cc3894f7",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "metric",
+        "title": "Metros Total Produzido Media",
+        "config": {
+          "field": "metros_total_produzido_media",
+          "label": "Metros Total Produzido Media",
+          "value": "9.571,67",
+          "format": "number",
+          "rawValue": 9571.67
+        },
+        "position": {
+          "h": 1,
+          "w": 1,
+          "col": 7,
+          "row": 0
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "ac6dc937-63af-4dd7-b1e0-b285d3c18892",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "chart",
+        "title": "Kg Total Produzido por Material",
+        "config": {
+          "data": [
+            {
+              "name": "Enco",
+              "value": 11986.9
+            },
+            {
+              "name": "Np",
+              "value": 3847.5
+            },
+            {
+              "name": "Tripa",
+              "value": 941.3
+            },
+            {
+              "name": "Umr",
+              "value": 3392.3
+            }
+          ],
+          "type": "bar",
+          "xKey": "Material",
+          "yKey": "Kg Total Produzido",
+          "title": "Kg Total Produzido por Material",
+          "builder": {
+            "agg": "sum",
+            "xKey": "Material",
+            "yKey": "Kg Total Produzido"
+          }
+        },
+        "position": {
+          "h": 2,
+          "w": 2,
+          "col": 0,
+          "row": 1
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "55314efa-2a55-4db1-83f6-5c2beba8d5af",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "chart",
+        "title": "Metros Total Produzido por Material",
+        "config": {
+          "data": [
+            {
+              "name": "Enco",
+              "value": 609790
+            },
+            {
+              "name": "Np",
+              "value": 265989
+            },
+            {
+              "name": "Tripa",
+              "value": 107859
+            },
+            {
+              "name": "Umr",
+              "value": 164963
+            }
+          ],
+          "type": "bar",
+          "xKey": "Material",
+          "yKey": "Metros Total Produzido",
+          "title": "Metros Total Produzido por Material",
+          "builder": {
+            "agg": "sum",
+            "xKey": "Material",
+            "yKey": "Metros Total Produzido"
+          }
+        },
+        "position": {
+          "h": 2,
+          "w": 2,
+          "col": 1,
+          "row": 1
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "411a0bd5-3d98-45f5-a631-59ae7e40d9b8",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "chart",
+        "title": "Kg Total Produzido por _Impresso / Liso",
+        "config": {
+          "data": [
+            {
+              "name": "Imp",
+              "value": 13182.5
+            },
+            {
+              "name": "Liso",
+              "value": 6727
+            },
+            {
+              "name": "Np",
+              "value": 77
+            },
+            {
+              "name": "Umr",
+              "value": 181.5
+            }
+          ],
+          "type": "bar",
+          "xKey": "_Impresso / Liso",
+          "yKey": "Kg Total Produzido",
+          "title": "Kg Total Produzido por _Impresso / Liso",
+          "builder": {
+            "agg": "sum",
+            "xKey": "_Impresso / Liso",
+            "yKey": "Kg Total Produzido"
+          }
+        },
+        "position": {
+          "h": 2,
+          "w": 2,
+          "col": 2,
+          "row": 1
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      },
+      {
+        "id": "f83d5024-7e94-4ae9-aed8-2618901c9618",
+        "dashboard_id": "ed4c3c58-2bea-4953-b5f1-ea770fd1d59a",
+        "type": "chart",
+        "title": "Metros Total Produzido por _Impresso / Liso",
+        "config": {
+          "data": [
+            {
+              "name": "Imp",
+              "value": 775611
+            },
+            {
+              "name": "Liso",
+              "value": 359991
+            },
+            {
+              "name": "Np",
+              "value": 4752
+            },
+            {
+              "name": "Umr",
+              "value": 8247
+            }
+          ],
+          "type": "bar",
+          "xKey": "_Impresso / Liso",
+          "yKey": "Metros Total Produzido",
+          "title": "Metros Total Produzido por _Impresso / Liso",
+          "builder": {
+            "agg": "sum",
+            "xKey": "_Impresso / Liso",
+            "yKey": "Metros Total Produzido"
+          }
+        },
+        "position": {
+          "h": 2,
+          "w": 2,
+          "col": 3,
+          "row": 1
+        },
+        "created_at": "2026-01-01T23:29:45.481649+00:00"
+      }
+    ]
+  }
+}

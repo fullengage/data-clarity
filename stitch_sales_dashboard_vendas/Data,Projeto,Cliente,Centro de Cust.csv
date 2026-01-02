@@ -1,0 +1,11 @@
+Data,Projeto,Cliente,Centro de Custo,Descricao,Quantidade,Custo Unitario,Receita Unitaria,Custo Total,Receita Total,Resultado,Forma Pagamento,Status
+2025-01-02,Projeto Alpha,Frigorífico Bom Gado,Produção,Embalagem Vac,1200,1.85,3.20,2220.00,3840.00,1620.00,Boleto,Concluído
+2025-01-03,Projeto Beta,Laticínios ValeLeite,Produção,Embalagem Enco,900,2.10,3.80,1890.00,3420.00,1530.00,PIX,Concluído
+2025-01-04,Projeto Alpha,Frigorífico Bom Gado,Produção,Tripa Plástica,1500,0.95,1.90,1425.00,2850.00,1425.00,Transferência,Em Produção
+2025-01-05,Projeto Gama,Carnes Premium,Produção,Nylon Poli,700,3.40,5.50,2380.00,3850.00,1470.00,Boleto,Atrasado
+2025-01-06,Projeto Delta,Queijos Serra Azul,Produção,Embalagem Vac,1100,1.80,3.10,1980.00,3410.00,1430.00,PIX,Concluído
+2025-01-07,Projeto Beta,Laticínios ValeLeite,Produção,Nylon Poli,600,3.30,5.40,1980.00,3240.00,1260.00,Cartão,Em Produção
+2025-01-08,Projeto Gama,Carnes Premium,Produção,Embalagem Enco,1300,2.05,3.75,2665.00,4875.00,2210.00,Boleto,Concluído
+2025-01-09,Projeto Delta,Queijos Serra Azul,Produção,Tripa Plástica,2000,0.90,1.85,1800.00,3700.00,1900.00,Transferência,Concluído
+2025-01-10,Projeto Alpha,Frigorífico Bom Gado,Produção,Nylon Poli,500,3.50,5.70,1750.00,2850.00,1100.00,PIX,Em Produção
+2025-01-11,Projeto Beta,Laticínios ValeLeite,Produção,Embalagem Vac,1400,1.75,3.00,2450.00,4200.00,1750.00,Boleto,Concluído

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Webhook DataViz</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 12px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .success { color: #059669; }
+        .error { color: #dc2626; }
+        .info { color: #0284c7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Teste de Webhook DataViz-v2</h1>
+        <p>Este teste envia dados de exemplo para o webhook e mostra a resposta.</p>
+        
+        <button onclick="testWebhook()">🚀 Testar Webhook</button>
+        <button onclick="clearResult()">🗑️ Limpar</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const WEBHOOK_URL = 'https://autowebhook.chathook.com.br/webhook/DataViz-v2';
+        
+        function log(message, type = 'info') {
+            const result = document.getElementById('result');
+            const timestamp = new Date().toLocaleTimeString('pt-BR');
+            const className = type === 'error' ? 'error' : type === 'success' ? 'success' : 'info';
+            result.innerHTML += `<span class="${className}">[${timestamp}] ${message}</span>\n`;
+            result.scrollTop = result.scrollHeight;
+        }
+        
+        function clearResult() {
+            document.getElementById('result').innerHTML = '';
+        }
+        
+        async function testWebhook() {
+            clearResult();
+            log('🚀 Iniciando teste do webhook...', 'info');
+            
+            // Dados de teste simples
+            const testPayload = {
+                user_id: 'test-user-123',
+                file_name: 'teste.xlsx',
+                file_type: 'excel',
+                row_count: 5,
+                columns: [
+                    { name: 'Produto', type: 'text', sampleValues: ['A', 'B', 'C'], nullCount: 0 },
+                    { name: 'Valor', type: 'number', sampleValues: ['100', '200', '300'], nullCount: 0 },
+                    { name: 'Quantidade', type: 'number', sampleValues: ['10', '20', '30'], nullCount: 0 }
+                ],
+                sample_data: [
+                    { Produto: 'Produto A', Valor: 100, Quantidade: 10 },
+                    { Produto: 'Produto B', Valor: 200, Quantidade: 20 },
+                    { Produto: 'Produto C', Valor: 300, Quantidade: 30 },
+                    { Produto: 'Produto D', Valor: 150, Quantidade: 15 },
+                    { Produto: 'Produto E', Valor: 250, Quantidade: 25 }
+                ],
+                full_data: [
+                    { Produto: 'Produto A', Valor: 100, Quantidade: 10 },
+                    { Produto: 'Produto B', Valor: 200, Quantidade: 20 },
+                    { Produto: 'Produto C', Valor: 300, Quantidade: 30 },
+                    { Produto: 'Produto D', Valor: 150, Quantidade: 15 },
+                    { Produto: 'Produto E', Valor: 250, Quantidade: 25 }
+                ],
+                timestamp: new Date().toISOString()
+            };
+            
+            log(`📤 Enviando para: ${WEBHOOK_URL}`, 'info');
+            log(`📦 Tamanho do payload: ${JSON.stringify(testPayload).length} bytes`, 'info');
+            
+            try {
+                const startTime = Date.now();
+                
+                const response = await fetch(WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(testPayload)
+                });
+                
+                const duration = Date.now() - startTime;
+                
+                log(`📥 Status: ${response.status} ${response.statusText}`, 
+                    response.ok ? 'success' : 'error');
+                log(`⏱️ Tempo de resposta: ${duration}ms`, 'info');
+                
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    log(`❌ Erro: ${errorText}`, 'error');
+                    return;
+                }
+                
+                const result = await response.json();
+                log('✅ Resposta recebida com sucesso!', 'success');
+                log('📄 Resposta completa:', 'info');
+                log(JSON.stringify(result, null, 2), 'info');
+                
+                // Validar campos esperados
+                log('\n🔍 Validação da resposta:', 'info');
+                log(`  - charts: ${result.charts ? '✅ ' + result.charts.length + ' gráfico(s)' : '❌ ausente'}`, 
+                    result.charts ? 'success' : 'error');
+                log(`  - metrics: ${result.metrics ? '✅ ' + result.metrics.length + ' métrica(s)' : '❌ ausente'}`, 
+                    result.metrics ? 'success' : 'error');
+                log(`  - insights: ${result.insights ? '✅ ' + result.insights.length + ' insight(s)' : '❌ ausente'}`, 
+                    result.insights ? 'success' : 'error');
+                
+            } catch (error) {
+                log(`❌ Erro ao chamar webhook: ${error.message}`, 'error');
+                log(`Stack: ${error.stack}`, 'error');
+            }
+        }
+    </script>
+</body>
+</html>

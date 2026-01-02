@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard de Clientes - A4AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #4F46E5;
+            --secondary: #6366F1;
+            --bg-body: #F3F4F6;
+            --bg-card: #FFFFFF;
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --success: #10B981;
+            --danger: #EF4444;
+            --warning: #F59E0B;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex">
+<aside class="w-64 bg-white border-r border-gray-200 hidden lg:flex flex-col fixed h-full z-10">
+<div class="h-16 flex items-center px-6 border-b border-gray-200">
+<div class="flex items-center gap-2 text-[var(--primary)] font-bold text-xl">
+<span class="material-symbols-outlined text-3xl">analytics</span>
+<span>A4AI</span>
+</div>
+</div>
+<nav class="flex-1 overflow-y-auto py-4">
+<ul class="space-y-1 px-3">
+<li>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[var(--primary)] rounded-lg transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-[var(--primary)] text-gray-400">dashboard</span>
+<span class="font-medium">Visão Geral</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 bg-[var(--primary)] text-white rounded-lg shadow-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-white">group</span>
+<span class="font-medium">Clientes</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[var(--primary)] rounded-lg transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-[var(--primary)] text-gray-400">monitoring</span>
+<span class="font-medium">Analytics</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[var(--primary)] rounded-lg transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-[var(--primary)] text-gray-400">campaign</span>
+<span class="font-medium">Campanhas</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[var(--primary)] rounded-lg transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-[var(--primary)] text-gray-400">mail</span>
+<span class="font-medium">Mensagens</span>
+<span class="ml-auto bg-red-100 text-red-600 text-xs font-semibold px-2 py-0.5 rounded-full">3</span>
+</a>
+</li>
+</ul>
+<div class="mt-8 px-6 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Configurações</div>
+<ul class="space-y-1 px-3">
+<li>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[var(--primary)] rounded-lg transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-[var(--primary)] text-gray-400">settings</span>
+<span class="font-medium">Sistema</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-[var(--primary)] rounded-lg transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:text-[var(--primary)] text-gray-400">help</span>
+<span class="font-medium">Ajuda</span>
+</a>
+</li>
+</ul>
+</nav>
+<div class="p-4 border-t border-gray-200">
+<div class="flex items-center gap-3">
+<img alt="User" class="w-9 h-9 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXZfg8G1M8IUQjdj4H5nwitI7PRPYhWqEM7QomPney3EPLdGFda7OtpUHLS2JntYIcKe-ApjzQ_JidZQ4FQQsZHkIBFIBscKNOqgjmD5oTTTvoJ5ckx5ZNqgtxyRtlqGDTa2cWmjZkzlXR8MoD7dHKIeuWotumBcSnDCE1dXdGBBmz1Z6r5nPfVegsKA--aRI5DFBz6FUwOkKAKE_LGxSaPl16WRNBHoWZb_jn8g3Om48n3k_2J93m1NowrOZ-Dxga4JAyfugEkB8"/>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-gray-900 truncate">Ana Silva</p>
+<p class="text-xs text-gray-500 truncate">ana@a4ai.com</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 lg:ml-64 min-w-0">
+<header class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-4 sm:px-6 lg:px-8 sticky top-0 z-20">
+<div class="flex items-center gap-4">
+<button class="lg:hidden text-gray-500 hover:text-gray-700">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-xl font-bold text-gray-900">Dashboard de Clientes</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex relative">
+<span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 text-[20px]">search</span>
+</span>
+<input class="block w-64 pl-10 pr-3 py-2 border border-gray-300 rounded-lg leading-5 bg-gray-50 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] sm:text-sm transition duration-150 ease-in-out" placeholder="Buscar cliente..." type="text"/>
+</div>
+<button class="relative p-2 text-gray-400 hover:text-gray-500 focus:outline-none">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 block h-2 w-2 rounded-full bg-red-500 ring-2 ring-white"></span>
+</button>
+</div>
+</header>
+<div class="p-4 sm:p-6 lg:p-8 space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="text-sm font-medium text-gray-500">Período de Análise</h2>
+<div class="mt-1 flex items-center gap-2 text-gray-900 font-semibold">
+<span>01 Set, 2023</span>
+<span class="text-gray-400">-</span>
+<span>30 Set, 2023</span>
+<button class="ml-2 text-[var(--primary)] hover:text-[var(--secondary)]">
+<span class="material-symbols-outlined text-sm align-middle">calendar_month</span>
+</button>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 text-sm font-medium text-gray-600 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Exportar</button>
+<button class="px-3 py-1.5 text-sm font-medium text-white bg-[var(--primary)] rounded-md hover:bg-[var(--secondary)] shadow-sm">Novo Cliente</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+<div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500">Total de Clientes</p>
+<h3 class="text-2xl font-bold text-gray-900 mt-1">2,450</h3>
+</div>
+<div class="p-2 bg-indigo-50 rounded-lg">
+<span class="material-symbols-outlined text-[var(--primary)]">group</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-[var(--success)] flex items-center font-medium">
+<span class="material-symbols-outlined text-base mr-0.5">trending_up</span>
+                            12%
+                        </span>
+<span class="text-gray-400 ml-2">vs mês anterior</span>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500">Clientes Ativos</p>
+<h3 class="text-2xl font-bold text-gray-900 mt-1">1,890</h3>
+</div>
+<div class="p-2 bg-green-50 rounded-lg">
+<span class="material-symbols-outlined text-green-600">person_check</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-[var(--success)] flex items-center font-medium">
+<span class="material-symbols-outlined text-base mr-0.5">trending_up</span>
+                            5%
+                        </span>
+<span class="text-gray-400 ml-2">vs mês anterior</span>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500">Churn Rate</p>
+<h3 class="text-2xl font-bold text-gray-900 mt-1">2.4%</h3>
+</div>
+<div class="p-2 bg-red-50 rounded-lg">
+<span class="material-symbols-outlined text-red-600">person_remove</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-[var(--danger)] flex items-center font-medium">
+<span class="material-symbols-outlined text-base mr-0.5">trending_up</span>
+                            0.3%
+                        </span>
+<span class="text-gray-400 ml-2">vs mês anterior</span>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500">NPS</p>
+<h3 class="text-2xl font-bold text-gray-900 mt-1">72</h3>
+</div>
+<div class="p-2 bg-yellow-50 rounded-lg">
+<span class="material-symbols-outlined text-yellow-600">reviews</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-[var(--success)] flex items-center font-medium">
+<span class="material-symbols-outlined text-base mr-0.5">trending_up</span>
+                            2 pts
+                        </span>
+<span class="text-gray-400 ml-2">vs mês anterior</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 lg:col-span-2">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-lg font-bold text-gray-900">Aquisição de Clientes</h3>
+<div class="flex bg-gray-100 p-1 rounded-lg">
+<button class="px-3 py-1 bg-white shadow-sm rounded-md text-xs font-medium text-gray-800">Mensal</button>
+<button class="px-3 py-1 text-xs font-medium text-gray-500 hover:text-gray-800">Semanal</button>
+</div>
+</div>
+<div class="relative h-64 w-full flex items-end justify-between gap-2 px-2">
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none">
+<div class="border-t border-gray-100 w-full h-0"></div>
+<div class="border-t border-gray-100 w-full h-0"></div>
+<div class="border-t border-gray-100 w-full h-0"></div>
+<div class="border-t border-gray-100 w-full h-0"></div>
+<div class="border-t border-gray-100 w-full h-0"></div>
+</div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[30%] relative group hover:bg-[var(--primary)] transition-colors">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded pointer-events-none transition-opacity">30</div>
+</div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[45%] relative group hover:bg-[var(--primary)] transition-colors">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded pointer-events-none transition-opacity">45</div>
+</div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[35%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[60%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[50%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-[var(--primary)] rounded-t-sm h-[75%] relative group shadow-lg shadow-indigo-200">
+<div class="opacity-0 group-hover:opacity-100 absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded pointer-events-none transition-opacity">75</div>
+</div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[65%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[55%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[80%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[70%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[60%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+<div class="w-1/12 bg-indigo-100 rounded-t-sm h-[85%] relative group hover:bg-[var(--primary)] transition-colors"></div>
+</div>
+<div class="flex justify-between mt-2 text-xs text-gray-400">
+<span>Jan</span>
+<span>Fev</span>
+<span>Mar</span>
+<span>Abr</span>
+<span>Mai</span>
+<span>Jun</span>
+<span>Jul</span>
+<span>Ago</span>
+<span>Set</span>
+<span>Out</span>
+<span>Nov</span>
+<span>Dez</span>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+<h3 class="text-lg font-bold text-gray-900 mb-6">Segmentação</h3>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">Enterprise</span>
+<span class="font-bold text-gray-900">45%</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2.5">
+<div class="bg-[var(--primary)] h-2.5 rounded-full" style="width: 45%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">PMEs</span>
+<span class="font-bold text-gray-900">32%</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2.5">
+<div class="bg-purple-400 h-2.5 rounded-full" style="width: 32%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">Startups</span>
+<span class="font-bold text-gray-900">15%</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2.5">
+<div class="bg-pink-400 h-2.5 rounded-full" style="width: 15%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">Governo</span>
+<span class="font-bold text-gray-900">8%</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2.5">
+<div class="bg-orange-400 h-2.5 rounded-full" style="width: 8%"></div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-gray-100">
+<div class="flex items-center gap-3 p-3 bg-blue-50 rounded-lg">
+<span class="material-symbols-outlined text-blue-600">tips_and_updates</span>
+<div>
+<p class="text-xs text-blue-800 font-semibold">Dica de Insight</p>
+<p class="text-xs text-blue-600">O segmento Enterprise cresceu 5% este mês.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+<div class="p-6 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<h3 class="text-lg font-bold text-gray-900">Clientes Recentes</h3>
+<div class="flex gap-2">
+<button class="text-gray-400 hover:text-gray-600">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="text-gray-400 hover:text-gray-600">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-gray-50/50 text-gray-500 text-xs uppercase tracking-wider font-semibold border-b border-gray-100">
+<th class="px-6 py-4">Cliente</th>
+<th class="px-6 py-4">Plano</th>
+<th class="px-6 py-4">Status</th>
+<th class="px-6 py-4">Valor (MRR)</th>
+<th class="px-6 py-4">Data de Início</th>
+<th class="px-6 py-4 text-right">Ação</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100 text-sm">
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-8 w-8 rounded bg-blue-100 text-blue-600 flex items-center justify-center font-bold">TC</div>
+<div>
+<p class="font-medium text-gray-900">TechCorp Ltda</p>
+<p class="text-xs text-gray-500">techcorp.com.br</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-gray-600">Enterprise</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Ativo
+                                    </span>
+</td>
+<td class="px-6 py-4 font-medium text-gray-900">R$ 4.500,00</td>
+<td class="px-6 py-4 text-gray-500">28 Set, 2023</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-[var(--primary)] transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit_square</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-8 w-8 rounded bg-purple-100 text-purple-600 flex items-center justify-center font-bold">IN</div>
+<div>
+<p class="font-medium text-gray-900">Inova Solutions</p>
+<p class="text-xs text-gray-500">inovasol.com</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-gray-600">Pro</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                        Pendente
+                                    </span>
+</td>
+<td class="px-6 py-4 font-medium text-gray-900">R$ 1.200,00</td>
+<td class="px-6 py-4 text-gray-500">27 Set, 2023</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-[var(--primary)] transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit_square</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-8 w-8 rounded bg-pink-100 text-pink-600 flex items-center justify-center font-bold">GB</div>
+<div>
+<p class="font-medium text-gray-900">Global Foods</p>
+<p class="text-xs text-gray-500">globalfoods.ind</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-gray-600">Enterprise</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        Ativo
+                                    </span>
+</td>
+<td class="px-6 py-4 font-medium text-gray-900">R$ 8.900,00</td>
+<td class="px-6 py-4 text-gray-500">25 Set, 2023</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-[var(--primary)] transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit_square</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-8 w-8 rounded bg-gray-100 text-gray-600 flex items-center justify-center font-bold">UR</div>
+<div>
+<p class="font-medium text-gray-900">Urban Retail</p>
+<p class="text-xs text-gray-500">urbanretail.store</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-gray-600">Starter</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                        Cancelado
+                                    </span>
+</td>
+<td class="px-6 py-4 font-medium text-gray-900">R$ 450,00</td>
+<td class="px-6 py-4 text-gray-500">22 Set, 2023</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-[var(--primary)] transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit_square</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 border-t border-gray-100 flex items-center justify-between">
+<p class="text-xs text-gray-500">Mostrando <span class="font-medium">1</span> a <span class="font-medium">4</span> de <span class="font-medium">120</span> resultados</p>
+<div class="flex gap-1">
+<button class="px-2 py-1 border border-gray-300 rounded text-gray-500 hover:bg-gray-50 disabled:opacity-50 text-xs" disabled="">Anterior</button>
+<button class="px-2 py-1 border border-gray-300 rounded text-gray-500 hover:bg-gray-50 text-xs">Próximo</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+</body></html>

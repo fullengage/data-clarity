@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard Financeiro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1337ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0f111a", /* Updated to match user request for deep dark */
+                        "surface-dark": "#1f2937",    /* Card background color */
+                        "secondary-text": "#94a3b8",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-hidden selection:bg-primary selection:text-white">
+<div class="flex h-screen w-full">
+<!-- Sidebar Navigation -->
+<aside class="hidden md:flex w-64 flex-col gap-6 border-r border-slate-800 bg-[#111422] p-5 shrink-0 z-20">
+<!-- Brand -->
+<div class="flex items-center gap-3 px-2">
+<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-blue-600 text-white shadow-lg shadow-blue-900/20">
+<span class="material-symbols-outlined">finance_chip</span>
+</div>
+<div class="flex flex-col">
+<h1 class="text-lg font-bold leading-none tracking-tight text-white">FinDash</h1>
+<span class="text-xs font-medium text-secondary-text">Admin View</span>
+</div>
+</div>
+<!-- Navigation Menu -->
+<nav class="flex flex-1 flex-col gap-2 mt-2">
+<a class="group flex items-center gap-3 rounded-lg bg-primary px-3 py-2.5 text-white shadow-md shadow-blue-900/20 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="text-sm font-semibold">Dashboard</span>
+</a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2.5 text-secondary-text hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+<span class="text-sm font-medium">Reports</span>
+</a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2.5 text-secondary-text hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">receipt_long</span>
+<span class="text-sm font-medium">Transactions</span>
+</a>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2.5 text-secondary-text hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+<span class="text-sm font-medium">Budgeting</span>
+</a>
+<div class="my-2 h-px bg-slate-800 mx-2"></div>
+<a class="group flex items-center gap-3 rounded-lg px-3 py-2.5 text-secondary-text hover:bg-white/5 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</nav>
+<!-- User Profile -->
+<div class="mt-auto rounded-xl bg-slate-800/40 p-3 border border-slate-700/50 flex items-center gap-3 hover:bg-slate-800/60 transition-colors cursor-pointer">
+<div class="h-9 w-9 rounded-full bg-cover bg-center ring-2 ring-slate-700" data-alt="Profile picture of the current user" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBwQm4_AHaU0KFb7jtFHhPHE4uN7Sd5F2c_EanOhUYhc9YYCXmK6ixcK7qbNjR-cSGxKuOYDjECOaEOLtizVlb7DiBLzN1OyupyJhCTyCIBnhQO07PRkib3O346j-MSbw-FtOkbN2tnS5N4rSJsAb1X1gRAsZ6qvIIZFYU6_jgEhqYNnHPfy3V-bO8YpeCzbbIMa4v5TFjWzi-MjoAsBvHwMncOm2YsBNswefu30zoOorq4AE3WKaKB5vUmuH1d31Bm_0l0AX0sME4');"></div>
+<div class="flex flex-col overflow-hidden">
+<p class="text-sm font-semibold text-white truncate">Alex Morgan</p>
+<p class="text-xs text-secondary-text truncate">alex.m@a4ai.com</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-secondary-text text-[18px]">more_vert</span>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col h-full overflow-hidden relative bg-background-light dark:bg-background-dark">
+<!-- Header / Toolbar -->
+<header class="flex items-center justify-between border-b border-slate-800 bg-background-dark/80 px-6 py-4 backdrop-blur-md z-10 shrink-0 sticky top-0">
+<div>
+<h2 class="text-2xl font-bold text-white tracking-tight">Financial Overview</h2>
+<p class="text-sm text-secondary-text mt-1">Welcome back, here is your daily breakdown.</p>
+</div>
+<div class="flex items-center gap-3">
+<!-- Search Bar -->
+<div class="relative hidden lg:block group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-primary transition-colors text-[20px]">search</span>
+<input class="h-10 w-64 rounded-lg bg-surface-dark border border-slate-700 pl-10 pr-4 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Search analytics..." type="text"/>
+</div>
+<!-- Date Filter -->
+<button class="flex items-center gap-2 rounded-lg border border-slate-700 bg-surface-dark px-4 py-2 text-sm font-medium text-slate-300 hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Last 30 Days</span>
+<span class="material-symbols-outlined text-[16px] text-slate-500">expand_more</span>
+</button>
+<!-- Notifications -->
+<button class="relative flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 bg-surface-dark text-slate-400 hover:text-white hover:bg-slate-700 transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute right-2 top-2 h-2 w-2 rounded-full bg-red-500 ring-2 ring-surface-dark"></span>
+</button>
+<!-- Download Report Button -->
+<button class="hidden sm:flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-bold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Export</span>
+</button>
+</div>
+</header>
+<!-- Scrollable Dashboard Content -->
+<div class="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8 scroll-smooth">
+<div class="mx-auto max-w-[1400px] flex flex-col gap-6">
+<!-- KPI Stats Cards -->
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Revenue -->
+<div class="relative overflow-hidden rounded-xl bg-surface-dark p-5 border border-slate-800 shadow-sm group hover:border-slate-600 transition-all">
+<div class="flex justify-between items-start z-10 relative">
+<div>
+<p class="text-sm font-medium text-secondary-text">Total Revenue</p>
+<h3 class="mt-2 text-2xl font-bold text-white tracking-tight">$1,250,400</h3>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2 z-10 relative">
+<span class="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-400">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                12%
+                            </span>
+<span class="text-xs text-secondary-text">vs last month</span>
+</div>
+<!-- Decorative gradient blob -->
+<div class="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/5 blur-2xl group-hover:bg-primary/10 transition-all"></div>
+</div>
+<!-- Expenses -->
+<div class="relative overflow-hidden rounded-xl bg-surface-dark p-5 border border-slate-800 shadow-sm group hover:border-slate-600 transition-all">
+<div class="flex justify-between items-start z-10 relative">
+<div>
+<p class="text-sm font-medium text-secondary-text">Total Expenses</p>
+<h3 class="mt-2 text-2xl font-bold text-white tracking-tight">$850,200</h3>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10 text-orange-500">
+<span class="material-symbols-outlined">credit_card</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2 z-10 relative">
+<span class="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-400">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+                                5%
+                            </span>
+<span class="text-xs text-secondary-text">vs last month (Good)</span>
+</div>
+</div>
+<!-- Net Profit -->
+<div class="relative overflow-hidden rounded-xl bg-surface-dark p-5 border border-slate-800 shadow-sm group hover:border-slate-600 transition-all">
+<div class="flex justify-between items-start z-10 relative">
+<div>
+<p class="text-sm font-medium text-secondary-text">Net Profit Margin</p>
+<h3 class="mt-2 text-2xl font-bold text-white tracking-tight">32%</h3>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500/10 text-indigo-400">
+<span class="material-symbols-outlined">bar_chart</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2 z-10 relative">
+<span class="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-400">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                2.4%
+                            </span>
+<span class="text-xs text-secondary-text">vs last month</span>
+</div>
+</div>
+<!-- Cash on Hand -->
+<div class="relative overflow-hidden rounded-xl bg-surface-dark p-5 border border-slate-800 shadow-sm group hover:border-slate-600 transition-all">
+<div class="flex justify-between items-start z-10 relative">
+<div>
+<p class="text-sm font-medium text-secondary-text">Cash on Hand</p>
+<h3 class="mt-2 text-2xl font-bold text-white tracking-tight">$400,000</h3>
+</div>
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-500/10 text-cyan-400">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2 z-10 relative">
+<span class="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-xs font-semibold text-emerald-400">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+                                10%
+                            </span>
+<span class="text-xs text-secondary-text">vs last month</span>
+</div>
+</div>
+</div>
+<!-- Main Charts Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Large Trend Chart -->
+<div class="lg:col-span-2 rounded-xl bg-surface-dark p-6 border border-slate-800 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8">
+<div>
+<h3 class="text-lg font-bold text-white">Cash Flow Trends</h3>
+<p class="text-sm text-secondary-text mt-1">Income vs Expenses Analysis</p>
+</div>
+<div class="mt-4 sm:mt-0 flex gap-4">
+<div class="flex items-center gap-2">
+<span class="h-3 w-3 rounded-full bg-primary shadow shadow-blue-500/50"></span>
+<span class="text-xs font-medium text-slate-300">Income</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="h-3 w-3 rounded-full bg-slate-600"></span>
+<span class="text-xs font-medium text-slate-300">Expenses</span>
+</div>
+</div>
+</div>
+<!-- Chart Visualization -->
+<div class="w-full h-[320px] relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 800 320">
+<defs>
+<lineargradient id="gradientPrimary" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#1337ec" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#1337ec" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Y Axis Grid Lines -->
+<line stroke="#2a3042" stroke-width="1" x1="0" x2="800" y1="280" y2="280"></line>
+<line stroke="#2a3042" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="210" y2="210"></line>
+<line stroke="#2a3042" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="140" y2="140"></line>
+<line stroke="#2a3042" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="800" y1="70" y2="70"></line>
+<!-- Income Line (Primary) -->
+<path d="M0,220 C80,220 120,100 200,140 S320,180 400,100 S520,50 600,90 S720,20 800,50" fill="none" stroke="#1337ec" stroke-linecap="round" stroke-width="3"></path>
+<path d="M0,220 C80,220 120,100 200,140 S320,180 400,100 S520,50 600,90 S720,20 800,50 V280 H0 Z" fill="url(#gradientPrimary)" stroke="none"></path>
+<!-- Expenses Line (Secondary) -->
+<path d="M0,240 C80,250 120,200 200,210 S320,230 400,180 S520,200 600,170 S720,160 800,180" fill="none" stroke="#64748b" stroke-dasharray="6 4" stroke-linecap="round" stroke-width="2"></path>
+<!-- Interactive Point Mockup -->
+<circle cx="600" cy="90" fill="#1337ec" r="5" stroke="white" stroke-width="2"></circle>
+<rect fill="#1e293b" height="30" rx="4" stroke="#334155" width="80" x="560" y="40"></rect>
+<text fill="white" font-family="Manrope" font-size="12" font-weight="bold" text-anchor="middle" x="600" y="60">$924k</text>
+</svg>
+<!-- X Axis Labels -->
+<div class="flex justify-between mt-4 text-xs text-secondary-text font-medium px-2">
+<span>Jan</span>
+<span>Feb</span>
+<span>Mar</span>
+<span>Apr</span>
+<span>May</span>
+<span>Jun</span>
+<span>Jul</span>
+<span>Aug</span>
+</div>
+</div>
+</div>
+<!-- Side Widgets Column -->
+<div class="flex flex-col gap-6">
+<!-- Revenue Sources Pie -->
+<div class="flex-1 rounded-xl bg-surface-dark p-6 border border-slate-800 shadow-sm flex flex-col justify-center">
+<h3 class="text-lg font-bold text-white mb-6">Revenue Sources</h3>
+<div class="flex items-center gap-6">
+<div class="relative h-32 w-32 shrink-0">
+<svg class="h-full w-full rotate-[-90deg]" viewbox="0 0 36 36">
+<!-- Background Circle -->
+<path class="text-slate-700/30" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<!-- Segment 1 (Primary) -->
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="60, 100" stroke-linecap="round" stroke-width="3"></path>
+<!-- Segment 2 (Cyan) -->
+<path class="text-cyan-500" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="25, 100" stroke-dashoffset="-60" stroke-linecap="round" stroke-width="3"></path>
+<!-- Segment 3 (Gray) -->
+<path class="text-slate-500" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="10, 100" stroke-dashoffset="-85" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center flex-col pointer-events-none">
+<span class="text-[10px] uppercase tracking-wide text-secondary-text">Total</span>
+<span class="text-lg font-bold text-white">$1.2M</span>
+</div>
+</div>
+<div class="flex flex-col gap-3 flex-1 justify-center">
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-primary"></span>
+<span class="text-slate-300">Sales</span>
+</div>
+<span class="font-bold text-white">60%</span>
+</div>
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-cyan-500"></span>
+<span class="text-slate-300">Services</span>
+</div>
+<span class="font-bold text-white">25%</span>
+</div>
+<div class="flex items-center justify-between text-sm">
+<div class="flex items-center gap-2">
+<span class="h-2 w-2 rounded-full bg-slate-500"></span>
+<span class="text-slate-300">Other</span>
+</div>
+<span class="font-bold text-white">15%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Budget Status Bars -->
+<div class="flex-1 rounded-xl bg-surface-dark p-6 border border-slate-800 shadow-sm flex flex-col justify-center">
+<div class="flex items-center justify-between mb-5">
+<h3 class="text-lg font-bold text-white">Budget Status</h3>
+<button class="text-xs text-primary font-bold hover:underline">VIEW ALL</button>
+</div>
+<div class="flex flex-col gap-5">
+<div class="group">
+<div class="flex justify-between text-sm mb-2">
+<span class="font-medium text-slate-300">Marketing</span>
+<span class="text-secondary-text">75% used</span>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-700/50 overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all group-hover:bg-blue-500" style="width: 75%"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between text-sm mb-2">
+<span class="font-medium text-slate-300">Operations</span>
+<span class="text-secondary-text">45% used</span>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-700/50 overflow-hidden">
+<div class="h-full bg-cyan-500 rounded-full transition-all group-hover:bg-cyan-400" style="width: 45%"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between text-sm mb-2">
+<span class="font-medium text-slate-300">Development</span>
+<span class="text-secondary-text">90% used</span>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-700/50 overflow-hidden">
+<div class="h-full bg-amber-500 rounded-full transition-all group-hover:bg-amber-400" style="width: 90%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Transactions Table -->
+<div class="rounded-xl bg-surface-dark border border-slate-800 overflow-hidden shadow-sm mb-6">
+<div class="p-6 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+<h3 class="text-lg font-bold text-white">Recent Transactions</h3>
+<div class="flex gap-2">
+<button class="flex items-center gap-2 rounded-lg bg-slate-800 border border-slate-700 px-3 py-1.5 text-xs text-slate-300 hover:bg-slate-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span>
+                                Filter
+                            </button>
+<button class="flex items-center gap-2 rounded-lg bg-slate-800 border border-slate-700 px-3 py-1.5 text-xs text-slate-300 hover:bg-slate-700 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                                Export CSV
+                            </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-sm text-secondary-text">
+<thead class="bg-slate-900/40 text-xs uppercase tracking-wider text-slate-400 font-semibold">
+<tr>
+<th class="px-6 py-4">Transaction</th>
+<th class="px-6 py-4">Date</th>
+<th class="px-6 py-4">Category</th>
+<th class="px-6 py-4">Status</th>
+<th class="px-6 py-4 text-right">Amount</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-800">
+<tr class="group hover:bg-slate-800/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full p-1.5 bg-slate-800 border border-slate-700 flex items-center justify-center">
+<div class="h-full w-full rounded-full bg-gradient-to-br from-indigo-500 to-purple-600" data-alt="Stripe logo indicator"></div>
+</div>
+<span class="font-medium text-white group-hover:text-primary transition-colors">Stripe Payment</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">Oct 24, 2023</td>
+<td class="px-6 py-4">Subscription</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-400 border border-emerald-500/20">
+                                            Completed
+                                        </span>
+</td>
+<td class="px-6 py-4 text-right font-medium text-white">+$1,250.00</td>
+</tr>
+<tr class="group hover:bg-slate-800/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full p-1.5 bg-slate-800 border border-slate-700 flex items-center justify-center">
+<div class="h-full w-full rounded-full bg-gradient-to-br from-orange-400 to-amber-500" data-alt="AWS logo indicator"></div>
+</div>
+<span class="font-medium text-white group-hover:text-primary transition-colors">AWS Invoice</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">Oct 23, 2023</td>
+<td class="px-6 py-4">Infrastructure</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-amber-500/10 px-2.5 py-1 text-xs font-medium text-amber-400 border border-amber-500/20">
+                                            Pending
+                                        </span>
+</td>
+<td class="px-6 py-4 text-right font-medium text-white">-$542.00</td>
+</tr>
+<tr class="group hover:bg-slate-800/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full p-1.5 bg-slate-800 border border-slate-700 flex items-center justify-center">
+<div class="h-full w-full rounded-full bg-gradient-to-br from-blue-400 to-cyan-500" data-alt="Office supply logo indicator"></div>
+</div>
+<span class="font-medium text-white group-hover:text-primary transition-colors">Office Supply Co.</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">Oct 22, 2023</td>
+<td class="px-6 py-4">Operations</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-400 border border-emerald-500/20">
+                                            Completed
+                                        </span>
+</td>
+<td class="px-6 py-4 text-right font-medium text-white">-$125.50</td>
+</tr>
+<tr class="group hover:bg-slate-800/30 transition-colors">
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full p-1.5 bg-slate-800 border border-slate-700 flex items-center justify-center">
+<div class="h-full w-full rounded-full bg-gradient-to-br from-red-400 to-pink-500" data-alt="Client refund logo indicator"></div>
+</div>
+<span class="font-medium text-white group-hover:text-primary transition-colors">Client Refund</span>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">Oct 21, 2023</td>
+<td class="px-6 py-4">Refund</td>
+<td class="px-6 py-4">
+<span class="inline-flex items-center rounded-full bg-slate-700 px-2.5 py-1 text-xs font-medium text-slate-300 border border-slate-600">
+                                            Processed
+                                        </span>
+</td>
+<td class="px-6 py-4 text-right font-medium text-white">-$350.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A4AI - Dashboard de Produção</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-bg: #f3f4f6;
+            --sidebar-bg: #1e293b;
+            --card-bg: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-orange: #f59e0b;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body class="h-screen flex overflow-hidden">
+<aside class="w-64 bg-slate-900 text-white flex flex-col h-full hidden md:flex flex-shrink-0 transition-all duration-300">
+<div class="h-16 flex items-center px-6 border-b border-slate-700">
+<div class="flex items-center gap-2 font-bold text-xl tracking-tight">
+<span class="material-symbols-outlined text-blue-500 fill-1">analytics</span>
+<span>A4AI</span>
+</div>
+</div>
+<nav class="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Visão Geral</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-blue-400 bg-slate-800 rounded-lg transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+<span>Produção</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">inventory_2</span>
+<span>Estoque</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span>Logística</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">engineering</span>
+<span>Manutenção</span>
+</a>
+<div class="pt-4 pb-2">
+<p class="px-4 text-xs font-semibold text-slate-500 uppercase tracking-wider">Relatórios</p>
+</div>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">assessment</span>
+<span>Qualidade</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Configurações</span>
+</a>
+</nav>
+<div class="p-4 border-t border-slate-700">
+<div class="flex items-center gap-3 px-2">
+<img alt="User Avatar" class="h-10 w-10 rounded-full border-2 border-slate-600" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz8rt1MVBD0w84_aU_xf_vW0K11CKxDdh3wYKavjnuOuVPmZtT-lK-4dceN6t2zO0_EvIh0SdsO4-ng6WZ29W4lzDg8TO4-MI3xR3aTlwkRyHxQpwHozJAgROVQImSAv2HrI1DIJBbpHpSkMmwlyDjutBaazsiPCwLaBz0jE3lD8z7Wifo1aOodmhGamthedGuQA0e49OfMn4lGNc1jVKs6qv2yWJI1ts3u2bvYWg_VI3c6NGKalM4fOdoEffl3YKOZRQ778OB704"/>
+<div>
+<p class="text-sm font-medium text-white">Carlos Silva</p>
+<p class="text-xs text-slate-400">Gerente de Produção</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 flex flex-col h-full overflow-hidden">
+<header class="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-8 flex-shrink-0">
+<h1 class="text-2xl font-bold text-gray-800">Dashboard de Produção</h1>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-gray-400 text-lg">search</span>
+<input class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-64" placeholder="Buscar pedido, máquina..." type="text"/>
+</div>
+<button class="p-2 text-gray-500 hover:bg-gray-100 rounded-full relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2 right-2 h-2 w-2 bg-red-500 rounded-full"></span>
+</button>
+<div class="h-8 w-px bg-gray-300 mx-2"></div>
+<div class="text-sm text-gray-500">
+                    Última atualização: <span class="font-medium text-gray-700">Hoje, 14:30</span>
+</div>
+</div>
+</header>
+<div class="flex-1 overflow-y-auto p-8 bg-gray-50">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+<div>
+<h2 class="text-lg font-medium text-gray-700">Visão Geral da Fábrica</h2>
+<p class="text-sm text-gray-500">Unidade São Paulo - Linha de Montagem A</p>
+</div>
+<div class="flex gap-3">
+<select class="bg-white border border-gray-300 text-gray-700 py-2 px-4 rounded-lg text-sm shadow-sm hover:border-blue-500 focus:outline-none">
+<option>Hoje</option>
+<option>Esta Semana</option>
+<option>Este Mês</option>
+</select>
+<button class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-sm font-medium flex items-center gap-2 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-lg">download</span> Exportar Relatório
+                    </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute right-0 top-0 h-full w-1 bg-blue-500"></div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500 mb-1">Eficiência Geral (OEE)</p>
+<h3 class="text-3xl font-bold text-gray-800">87.4%</h3>
+</div>
+<div class="p-2 bg-blue-50 rounded-lg text-blue-600">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-green-500 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-base">arrow_upward</span> 2.1%
+                        </span>
+<span class="text-gray-400 ml-2">vs. mês anterior</span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1 bg-green-500"></div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500 mb-1">Produção Total</p>
+<h3 class="text-3xl font-bold text-gray-800">12,450</h3>
+</div>
+<div class="p-2 bg-green-50 rounded-lg text-green-600">
+<span class="material-symbols-outlined">inventory</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-green-500 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-base">arrow_upward</span> 5.4%
+                        </span>
+<span class="text-gray-400 ml-2">unidades/dia</span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1 bg-red-500"></div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500 mb-1">Taxa de Rejeição</p>
+<h3 class="text-3xl font-bold text-gray-800">1.2%</h3>
+</div>
+<div class="p-2 bg-red-50 rounded-lg text-red-600">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-red-500 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-base">arrow_upward</span> 0.3%
+                        </span>
+<span class="text-gray-400 ml-2">acima da meta</span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1 bg-orange-500"></div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-gray-500 mb-1">Tempo de Parada</p>
+<h3 class="text-3xl font-bold text-gray-800">45m</h3>
+</div>
+<div class="p-2 bg-orange-50 rounded-lg text-orange-600">
+<span class="material-symbols-outlined">timer</span>
+</div>
+</div>
+<div class="mt-4 flex items-center text-sm">
+<span class="text-green-500 font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-base">arrow_downward</span> 12m
+                        </span>
+<span class="text-gray-400 ml-2">vs. ontem</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+<div class="lg:col-span-2 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-lg font-bold text-gray-800">Volume de Produção (Hora a Hora)</h3>
+<div class="flex gap-2">
+<span class="flex items-center text-xs text-gray-500"><span class="w-2 h-2 rounded-full bg-blue-500 mr-1"></span> Realizado</span>
+<span class="flex items-center text-xs text-gray-500"><span class="w-2 h-2 rounded-full bg-gray-300 mr-1"></span> Meta</span>
+</div>
+</div>
+<div class="h-64 flex items-end justify-between gap-2 text-xs text-gray-500">
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[60%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[55%] rounded-t-sm group-hover:bg-blue-600 transition-colors"></div>
+</div>
+<span>08:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[70%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[75%] rounded-t-sm group-hover:bg-blue-600 transition-colors"></div>
+</div>
+<span>09:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[80%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[82%] rounded-t-sm group-hover:bg-blue-600 transition-colors"></div>
+</div>
+<span>10:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[80%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[78%] rounded-t-sm group-hover:bg-blue-600 transition-colors"></div>
+</div>
+<span>11:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[75%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[40%] rounded-t-sm bg-red-400 group-hover:bg-red-500 transition-colors relative">
+<div class="opacity-0 group-hover:opacity-100 absolute bottom-full mb-2 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-[10px] whitespace-nowrap z-10">Parada Linha B</div>
+</div>
+</div>
+<span>12:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[85%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[88%] rounded-t-sm group-hover:bg-blue-600 transition-colors"></div>
+</div>
+<span>13:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[90%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500 h-[92%] rounded-t-sm group-hover:bg-blue-600 transition-colors"></div>
+</div>
+<span>14:00</span>
+</div>
+<div class="flex flex-col items-center gap-2 w-full group cursor-pointer">
+<div class="relative w-full flex justify-center h-full items-end gap-1">
+<div class="w-3 bg-gray-200 h-[90%] rounded-t-sm"></div>
+<div class="w-3 bg-blue-500/30 h-[90%] rounded-t-sm border border-dashed border-blue-500"></div>
+</div>
+<span>15:00</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+<h3 class="text-lg font-bold text-gray-800 mb-4">Status das Máquinas</h3>
+<div class="flex-1 flex flex-col justify-center space-y-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="h-3 w-3 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]"></div>
+<span class="font-medium text-gray-700">Operando</span>
+</div>
+<span class="font-bold text-gray-900">18 <span class="text-sm text-gray-400 font-normal">/ 24</span></span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2">
+<div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-3">
+<div class="h-3 w-3 rounded-full bg-yellow-400 shadow-[0_0_8px_rgba(250,204,21,0.5)]"></div>
+<span class="font-medium text-gray-700">Manutenção</span>
+</div>
+<span class="font-bold text-gray-900">4 <span class="text-sm text-gray-400 font-normal">/ 24</span></span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2">
+<div class="bg-yellow-400 h-2 rounded-full" style="width: 16%"></div>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex items-center gap-3">
+<div class="h-3 w-3 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.5)]"></div>
+<span class="font-medium text-gray-700">Parada Crítica</span>
+</div>
+<span class="font-bold text-gray-900">2 <span class="text-sm text-gray-400 font-normal">/ 24</span></span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2">
+<div class="bg-red-500 h-2 rounded-full" style="width: 8%"></div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100">
+<div class="flex justify-between items-center text-sm text-gray-500">
+<span>Disponibilidade Total</span>
+<span class="font-bold text-gray-800">75%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden mb-8">
+<div class="p-6 border-b border-gray-100 flex justify-between items-center">
+<h3 class="text-lg font-bold text-gray-800">Ordens de Produção Ativas</h3>
+<button class="text-blue-600 hover:text-blue-700 text-sm font-medium">Ver Todas</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-sm text-gray-600">
+<thead class="bg-gray-50 text-xs uppercase text-gray-500 font-semibold">
+<tr>
+<th class="px-6 py-4">ID Ordem</th>
+<th class="px-6 py-4">Produto</th>
+<th class="px-6 py-4">Linha</th>
+<th class="px-6 py-4">Status</th>
+<th class="px-6 py-4">Progresso</th>
+<th class="px-6 py-4">Previsão</th>
+<th class="px-6 py-4 text-right">Ação</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100">
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4 font-medium text-gray-900">#OP-2023-884</td>
+<td class="px-6 py-4">Componente Hidráulico X7</td>
+<td class="px-6 py-4">Linha A1</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold border border-green-200">Em Produção</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-gray-200 rounded-full h-1.5">
+<div class="bg-blue-600 h-1.5 rounded-full" style="width: 85%"></div>
+</div>
+<span class="text-xs font-medium">85%</span>
+</div>
+</td>
+<td class="px-6 py-4">16:45</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-blue-600 transition-colors"><span class="material-symbols-outlined text-lg">more_vert</span></button>
+</td>
+</tr>
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4 font-medium text-gray-900">#OP-2023-885</td>
+<td class="px-6 py-4">Válvula de Controle V2</td>
+<td class="px-6 py-4">Linha B3</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold border border-yellow-200">Pausado</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-gray-200 rounded-full h-1.5">
+<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 45%"></div>
+</div>
+<span class="text-xs font-medium">45%</span>
+</div>
+</td>
+<td class="px-6 py-4 text-red-500 font-medium">Atrasado</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-blue-600 transition-colors"><span class="material-symbols-outlined text-lg">more_vert</span></button>
+</td>
+</tr>
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4 font-medium text-gray-900">#OP-2023-889</td>
+<td class="px-6 py-4">Kit de Reparo K9</td>
+<td class="px-6 py-4">Célula Robotizada 2</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold border border-blue-200">Setup</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-gray-200 rounded-full h-1.5">
+<div class="bg-blue-300 h-1.5 rounded-full" style="width: 5%"></div>
+</div>
+<span class="text-xs font-medium">5%</span>
+</div>
+</td>
+<td class="px-6 py-4">18:30</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-blue-600 transition-colors"><span class="material-symbols-outlined text-lg">more_vert</span></button>
+</td>
+</tr>
+<tr class="hover:bg-gray-50 transition-colors">
+<td class="px-6 py-4 font-medium text-gray-900">#OP-2023-890</td>
+<td class="px-6 py-4">Sensor de Pressão P100</td>
+<td class="px-6 py-4">Linha A2</td>
+<td class="px-6 py-4">
+<span class="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs font-semibold border border-gray-200">Aguardando Matéria-Prima</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-24 bg-gray-200 rounded-full h-1.5">
+<div class="bg-gray-400 h-1.5 rounded-full" style="width: 0%"></div>
+</div>
+<span class="text-xs font-medium">0%</span>
+</div>
+</td>
+<td class="px-6 py-4">Amanhã</td>
+<td class="px-6 py-4 text-right">
+<button class="text-gray-400 hover:text-blue-600 transition-colors"><span class="material-symbols-outlined text-lg">more_vert</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-lg font-bold text-gray-800">Alertas Recentes</h3>
+<span class="text-xs text-blue-600 hover:underline cursor-pointer">Ver Histórico</span>
+</div>
+<div class="space-y-4">
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-red-600 text-sm">error</span>
+</div>
+<div>
+<p class="text-sm font-medium text-gray-800">Parada Não Planejada - Injetora 04</p>
+<p class="text-xs text-gray-500">Há 25 minutos • Causa: Superaquecimento</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-yellow-600 text-sm">warning</span>
+</div>
+<div>
+<p class="text-sm font-medium text-gray-800">Baixo Estoque de Resina Tipo B</p>
+<p class="text-xs text-gray-500">Há 1 hora • Restante: 4 horas de produção</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-blue-600 text-sm">info</span>
+</div>
+<div>
+<p class="text-sm font-medium text-gray-800">Manutenção Preventiva Concluída</p>
+<p class="text-xs text-gray-500">Há 3 horas • Robô Solda 02</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-lg font-bold text-gray-800">Performance por Turno</h3>
+<span class="material-symbols-outlined text-gray-400">more_horiz</span>
+</div>
+<div class="space-y-4">
+<div class="group cursor-pointer">
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">Turno da Manhã (A)</span>
+<span class="font-bold text-green-600">102% Meta</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2">
+<div class="bg-blue-600 h-2 rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">Turno da Tarde (B)</span>
+<span class="font-bold text-gray-600">88% Meta</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2">
+<div class="bg-blue-400 h-2 rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div class="group cursor-pointer">
+<div class="flex justify-between text-sm mb-1">
+<span class="font-medium text-gray-700">Turno da Noite (C)</span>
+<span class="font-bold text-gray-600">95% Meta</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2">
+<div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+<span>Líder do Turno Atual: Ricardo M.</span>
+<span class="text-green-500 flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-green-500"></span> Online</span>
+</div>
+</div>
+</div>
+<footer class="mt-8 text-center text-sm text-gray-400 pb-4">
+                © 2023 A4AI Analytics Platform. Todos os direitos reservados.
+            </footer>
+</div>
+</main>
+
+</body></html>
