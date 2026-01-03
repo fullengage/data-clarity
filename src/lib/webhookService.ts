@@ -15,7 +15,7 @@ import { askOpenAIForWidget, askOpenAIForFormula, isOpenAIConfigured } from './o
  */
 
 const WEBHOOK_URL = 'https://autowebhook.chathook.com.br/webhook/dc/full-pipeline';
-const AI_ASSISTANT_URL = 'https://autowebhook.chathook.com.br/webhook/chata4';
+const AI_ASSISTANT_URL = 'https://autowebhook.chathook.com.br/webhook/a4ia-chat';
 const AI_FORMULA_URL = 'https://autowebhook.chathook.com.br/webhook/dc/formula-generator';
 const SAMPLE_SIZE = 100;
 
