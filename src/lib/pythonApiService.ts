@@ -1,14 +1,8 @@
 import { ParsedFileData } from './fileParser';
 import { ProcessingResponse, DashboardMetric, ChartConfig } from '@/types/dashboard';
 
-const PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL;
-
-if (!PYTHON_API_URL) {
-  throw new Error(
-    "ERRO CRÍTICO: A variável de ambiente VITE_PYTHON_API_URL não está definida. " +
-    "Verifique o arquivo .env e faça rebuild do frontend."
-  );
-}
+// Python API configuration (public URL with fallback)
+const PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL || 'https://fullweb-python.n1n956.easypanel.host';
 
 /**
  * Python Engine Service - Substituição do N8N
