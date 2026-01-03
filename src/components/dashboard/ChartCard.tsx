@@ -200,7 +200,7 @@ function BarChartRenderer({
 }: BaseChartProps & { isHorizontal?: boolean }) {
   const chartHeight = isHorizontal ? 320 : 300;
 
-  const TooltipContent = ({ active, payload }: any) => {
+  const renderTooltip = ({ active, payload }: any) => {
     if (!active || !payload || payload.length === 0) return null;
     const p = payload?.[0]?.payload;
     if (isPaddingName(p?.name)) return null;
@@ -255,7 +255,7 @@ function BarChartRenderer({
           />
           <Tooltip
             cursor={{ fill: '#F1F5F9' }}
-            content={<TooltipContent />}
+            content={renderTooltip}
           />
           <Bar
             name={title}
