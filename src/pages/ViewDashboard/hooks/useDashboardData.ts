@@ -132,6 +132,15 @@ export function useDashboardData({
         ? dataset.sample_data
         : [];
 
+      console.log('🔍 [Dashboard Data] Debug Info:', {
+        datasetId: dataset?.id,
+        rowCount: rows.length,
+        sampleDataType: typeof dataset?.sample_data,
+        isArray: Array.isArray(dataset?.sample_data),
+        firstRow: rows[0],
+        originalColumns: dataset?.original_columns,
+      });
+
       // Atualizar IDs
       setStructuredDatasetId(dataset?.id || null);
       setSemanticDatasetId(aiDecision?.id || null);
@@ -142,6 +151,14 @@ export function useDashboardData({
 
       // Processar colunas
       const { columns, correctionMap } = processColumns(dataset?.original_columns, rows);
+      
+      console.log('🔍 [Dashboard Data] Processed:', {
+        columns,
+        columnsCount: columns.length,
+        rowsCount: rows.length,
+        correctionMapSize: correctionMap.size,
+      });
+      
       setTableData(rows);
       setTableColumns(columns);
 

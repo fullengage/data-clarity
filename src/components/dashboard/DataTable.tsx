@@ -41,6 +41,13 @@ export default function DataTable({
   onAddFormula,
   onEditFormula
 }: DataTableProps) {
+  console.log('📊 [DataTable] Render:', {
+    dataLength: data?.length || 0,
+    columnsLength: columns?.length || 0,
+    firstRow: data?.[0],
+    columns: columns,
+  });
+
   const [search, setSearch] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [editingCell, setEditingCell] = useState<{ row: number; col: string } | null>(null);
