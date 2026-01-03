@@ -27,6 +27,8 @@ from .metrics_engine import (
     generate_chart_suggestions,
     build_analysis_snapshot
 )
+from .chart_generator import ChartGenerator, get_available_chart_types
+from .chart_endpoints import router as chart_router
 
 app = FastAPI(title="Python Data Engine v2")
 
@@ -36,6 +38,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Incluir router de charts
+app.include_router(chart_router)
 
 
 def _sanitize(value) -> Any:

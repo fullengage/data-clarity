@@ -20,6 +20,24 @@ from datetime import datetime
 
 
 # ============================================================
+# 🔧 HELPER FUNCTIONS
+# ============================================================
+
+def safe_id(value: str) -> str:
+    """
+    Normaliza strings para IDs seguros (compatível com Python 3.11+).
+    Remove caracteres especiais e converte para lowercase.
+    
+    Args:
+        value: String para normalizar
+        
+    Returns:
+        String segura para usar como ID
+    """
+    return re.sub(r"[^\w]", "_", value.lower())
+
+
+# ============================================================
 # 0️⃣ TRATAMENTO DE ACENTOS E ENCODING
 # ============================================================
 
@@ -829,7 +847,7 @@ def build_analysis_snapshot(
         for num_col in (profile["currency_columns"] + profile["numeric_columns"])[:2]:
             if not pd.api.types.is_numeric_dtype(df_norm[num_col]):
                 continue
-            view_id = f"ranking_{re.sub(r'[^\\w]', '_', cat_col.lower())}_by_{re.sub(r'[^\\w]', '_', num_col.lower())}"
+            view_id = f"ranking_{safe_id(cat_col)}_by_{safe_id(num_col)}"
             grouped = df_norm.groupby(cat_col, dropna=True)[num_col].sum().sort_values(ascending=False).head(10)
             precomputed_views[view_id] = [
                 {cat_col: str(k), num_col: round(float(v), 2)}
@@ -843,7 +861,7 @@ def build_analysis_snapshot(
                 continue
             if not pd.api.types.is_datetime64_any_dtype(df_norm[date_col]):
                 continue
-            view_id = f"time_series_{re.sub(r'[^\\w]', '_', num_col.lower())}"
+            view_id = f"time_series_{safe_id(num_col)}"
             # Agrupa por mês
             df_temp = df_norm.copy()
             df_temp["_month"] = df_temp[date_col].dt.to_period("M").astype(str)
