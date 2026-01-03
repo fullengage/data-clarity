@@ -7,14 +7,11 @@ import { ColumnInfo, AiDecision } from '@/types/dashboard';
  * e proteger a API Key.
  */
 
-const PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL;
+// Python API configuration (public URL)
+const PYTHON_API_URL = import.meta.env.VITE_PYTHON_API_URL || 'https://fullweb-python.n1n956.easypanel.host';
 
-if (!PYTHON_API_URL) {
-  throw new Error(
-    "ERRO CRÍTICO: A variável de ambiente VITE_PYTHON_API_URL não está definida. " +
-    "Verifique o arquivo .env e faça rebuild do frontend."
-  );
-}
+// OpenAI Assistant ID (public)
+export const OPENAI_ASSISTANT_ID = import.meta.env.VITE_OPENAI_ASSISTANT_ID || 'asst_VQHy4YlsHwmzCbg1ZBTNbU6o';
 
 /**
  * Solicita geração de widget para o dashboard via Proxy Python
@@ -149,6 +146,6 @@ export async function askOpenAIForInterpretation(
   return { status: 'error', message: 'Interpretação via proxy não disponível no momento.' };
 }
 
-// O ID do Assistente agora é gerenciado pelo backend
-export const ASSISTANT_ID = 'proxy';
+// O ID do Assistente exportado
+export const ASSISTANT_ID = OPENAI_ASSISTANT_ID;
 
